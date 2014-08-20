@@ -7,13 +7,13 @@ $grayblue : rgba(153,173,196, 1);
 $purplepastel : rgba(184,57,99, 1);
 $hotpink : rgba(254,18,60, 1);
 $font: 'Oswald', sans-serif;
+$darkgray : #333333;
 
 
 nav.top-bar {
  text-align:center;
  height: 10%;
  padding-top: 1%;
- // border: 5px solid black;
  -webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  -moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
@@ -22,6 +22,10 @@ nav.top-bar {
 }
 body{
 	background-color: $darkteal;
+	color: #ddd;
+}
+h5 {
+	color: #ddd;
 }
 #title-text {
 	color: #ddd;
@@ -37,14 +41,195 @@ body{
 	font-family: $font;
 	text-shadow: -1px 3px 0px #000;
 	color: #ddd;
+
+}
+.heading-text {
+	font-size: 1.3em;
+	font-family: $font;
+	text-shadow: -1px 3px 0px #000;
+	color: #ddd;
+}
+.portfolio-text {
+	color: #ddd;
 }
 .right-box {
 	margin-top: -6%;
-	width: 15%;
-	height: 101%;
+	width: 20%;
+	height: 103%;
 	float: right;
 	background-color: #35404D;
 	-webkit-box-shadow: -9px 13px 6px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -9px 13px 6px 0px rgba(0,0,0,0.75);
   box-shadow: -9px 13px 6px 0px rgba(0,0,0,0.75);
 }
+.body-container {
+	margin-top: 5%;
+}
+.main-content {
+	margin: 0 auto;
+	padding: 1%;
+	width: 90%;
+	position: relative;
+	background-color: #000;
+	border: 1px solid $hotpink;
+}
+.main-content-sub {
+	display: none;
+}
+.projects-content {
+	margin: 0 auto;
+	margin-top: 5%;
+	padding: 0 1.5%;
+	width: 90%;
+	position: relative;
+	background-color: rgba(0, 0, 0, .4);
+	border: 1px solid $hotpink;
+}
+.projects-content-sub {
+	display: none;
+	width: 96%;
+}
+.project-grid {
+	margin-left: 7%;
+	width: 90%;
+	background-color: $darkteal + #444444;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+.proj-box {
+	background-color: $darkteal;
+	margin: 2% 9% 2% 5%;
+	width: 40%;
+	display: inline-block;
+	float: left;
+	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+ 	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+ 	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+}
+.proj-right {
+	background-color: $darkteal;
+	margin: 2% 0;
+	width: 40%;
+	display: inline-block;
+	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+}
+.proj-descript {
+	background-color: rgba(0, 0, 0, .6);
+	width: 100%;
+	height: 100px;
+	display: block;
+	padding: 2% 4%;
+}
+.proj-1 {
+	background: url(alemailSS.png);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	width: 49%;
+	height: 150px;
+	display: inline-block;
+}
+.proj-2 {
+	background: url(hsh.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 150px;
+	display: inline-block;
+}
+.proj-3 {
+	background: url(tapp-data.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 150px;
+	display: inline-block;
+}
+.proj-4 {
+	background: url(ttt3001.png);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 150px;
+	display: inline-block;
+}
+p {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 0.8em;
+	line-height: 1;
+}
+li .nav-styling a:hover {
+	background-color: black;
+}
+.top-bar-section ul li:hover:not(.has-form) > a .port-text-header {
+	color: $hotpink;
+}
+.top-bar-section ul li:hover:not(.has-form) > a {
+	color: $hotpink;
+}
+.my-resume {
+	margin: 0 auto;
+	width: 90%;
+	height: 1200px;
+	background: url(resumeAugust2014.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.reveal-modal {
+	height: 500px;
+	overflow: auto;
+	background-color: $purplepastel;	
+	border: 3px solid $hotpink;
+	border-radius: 100% 0 90% 0;
+}
+.red1:hover {
+	color: $hotpink;
+}
+.red2:hover {
+	color: $hotpink;
+}
+.red3:hover {
+	color: $hotpink;
+}
+.red4:hover {
+	color: $hotpink;
+}
+.red5:hover {
+	color: $hotpink;
+}
+.red6:hover {
+	color: $hotpink;
+}
+.red7:hover {
+	color: $hotpink;
+}
+.red8:hover {
+	color: $hotpink;
+}
+.red9:hover {
+	color: $hotpink;
+}
+.red10:hover {
+	color: $hotpink;
+}
+.red11:hover {
+	color: $hotpink;
+}
+.red12:hover {
+	color: $hotpink;
+}
+.red13:hover {
+	color: $hotpink;
+}
+.red14:hover {
+	color: $hotpink;
+}
+// .proj-1b {
+// 	background: url(alemailSS2-1.jpg);
+// 	background-size: 100%;
+// 	background-repeat: no-repeat;
+// 	width: 49%;
+// 	height: 150px;
+// 	display: inline-block;
+// }
