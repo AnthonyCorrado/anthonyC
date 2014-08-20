@@ -77,10 +77,10 @@ h5 {
 	display: none;
 }
 .projects-content {
-	margin: 0 auto;
+	margin-left: 5%;
 	margin-top: 5%;
 	padding: 0 1.5%;
-	width: 90%;
+	width: 10%;
 	position: relative;
 	background-color: rgba(0, 0, 0, .4);
 	border: 1px solid $hotpink;
@@ -179,7 +179,7 @@ li .nav-styling a:hover {
 .reveal-modal {
 	height: 500px;
 	overflow: auto;
-	background-color: $purplepastel;	
+	background-color: $grayblue - #444444;	
 	border: 3px solid $hotpink;
 	border-radius: 100% 0 90% 0;
 }
