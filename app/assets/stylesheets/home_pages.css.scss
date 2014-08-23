@@ -75,6 +75,7 @@ h5 {
 	position: relative;
 	background-color: #000;
 	border: 1px solid $hotpink;
+	outline: 1px solid transparent;
 }
 .main-content-sub {
 	display: none;
@@ -87,6 +88,7 @@ h5 {
 	position: relative;
 	background-color: rgba(0, 0, 0, .4);
 	border: 1px solid $hotpink;
+	outline: 1px solid transparent;
 }
 .projects-content-sub {
 	display: none;
@@ -178,6 +180,7 @@ li .nav-styling a:hover {
 	background: url(resumeAugust2014.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
+
 }
 .reveal-modal {
 	height: 450px;
@@ -185,6 +188,7 @@ li .nav-styling a:hover {
 	background-color: $grayblue - #444444;	
 	border: 3px solid $hotpink;
 	border-radius: 100% 0 90% 0;
+	outline: 1px solid transparent;
 }
 .contact-modal {
 	overflow: auto;
@@ -193,6 +197,7 @@ li .nav-styling a:hover {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	border: 3px solid $hotpink;
+	outline: 1px solid transparent;
 	border-radius: 0;
 }
 .red1:hover {
@@ -269,13 +274,23 @@ li .nav-styling a:hover {
 .mail-animate {
 	width: 75px;
 	height: 75px;
-	margin: -35% 0 0 25%;
+	margin: -30% 0 0 25%;
 	position: absolute;
 	background: url(gmail-logo.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	z-index: -10;
+	z-index: 10;
 	display: none;
+}
+.arrow {
+	width: 40%;
+	height: 100%;
+	margin-top: -20%;
+	margin-left: -100%;
+	background: url(arrow.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
 }
 .a-replica  {
 	font-family: $font;
