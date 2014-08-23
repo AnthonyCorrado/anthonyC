@@ -193,7 +193,7 @@ li .nav-styling a:hover {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	border: 3px solid $hotpink;
-	border-radius: 10px;
+	border-radius: 0;
 }
 .red1:hover {
 	color: $hotpink;
@@ -244,8 +244,8 @@ li .nav-styling a:hover {
 	background-color: $grayblue;
 }
 .inner-form {
-	margin: 0 auto;
 	width: 40%;
+	outline: 1px solid transparent;
 }
 .contact-form-filler {
 	margin-top: 30%;
@@ -253,7 +253,29 @@ li .nav-styling a:hover {
 	background-color: rgba(0, 0, 0, .5);
 	padding: 3%;
 	border: 5px solid rgba(0, 0, 0, .5);
-	border-radius: 6px;
+}
+.contact-message {
+	width: 40%;
+	margin-top: -35%;
+	padding-left: 3%;
+	position: absolute;
+	background-color: $darkteal;
+	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+ 	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+ 	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+ 	display: none;
+ 	border-radius: 0 70px 0 30px;
+}
+.mail-animate {
+	width: 75px;
+	height: 75px;
+	margin: -35% 0 0 25%;
+	position: absolute;
+	background: url(gmail-logo.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: -10;
+	display: none;
 }
 .a-replica  {
 	font-family: $font;

@@ -14,6 +14,13 @@ $('.portfolio-text').click(function(){
   $('.projects-content-sub').delay(400).slideToggle(1000);
 });
 
+$('.contact-animate').click(function() {
+	$('.inner-form').delay(500).animate({'margin-left' : '55%'}, 1000);
+	$('.contact-message').delay(1500).fadeIn('slow');
+	$('.mail-animate').delay(2000).fadeIn('fast');
+	$('.mail-animate').animate({'margin-top' : '100%'}, 2000);
+});
+
 $('.portfolio').hover(
 	function(){
 		$('.portfolio-text').css({'color': '#FE123C'});
