@@ -19,6 +19,16 @@ Rails.application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
+    config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'google.com',
+  user_name:            ENV["COMPANY_EMAIL"],
+  password:             ENV["EMAIL_PASSWORD"],
+  authentication:       'plain',
+  enable_starttls_auto: true  }
+
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.

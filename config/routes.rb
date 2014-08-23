@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'users/name'
+
+  get 'users/email'
+
+  get 'users/message'
+
+  resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

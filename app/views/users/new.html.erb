@@ -1,0 +1,16 @@
+<div class="inner-form envelope-img">
+	<div class="contact-form-filler">
+		<div><%= form_for(@user) do |f| %><div>
+			<label class="field-form">Name
+				<div><%= f.text_field :name  %></div>
+			</label>
+			<label class="field-form">Email
+				<div><%= f.text_field :email  %></div>
+			</label>
+			<label class="field-form">Message
+				<div><%= f.text_area :message %></div>
+			</label>
+			<div><%= f.submit 'submit', :class => "contact-submit" %></div>
+			<% end %>
+		</div>
+	</div>

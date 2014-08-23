@@ -4,6 +4,7 @@ $('.about-me').click(function(){
 $('.about-me-text').click(function(){
   $('.main-content-sub').slideToggle('slow');
 });
+
 $('.portfolio').click(function(){
 	$('.projects-content').animate({'width': '90%'});
   $('.projects-content-sub').delay(400).slideToggle(1000);
@@ -12,6 +13,7 @@ $('.portfolio-text').click(function(){
 	$('.projects-content').animate({'width': '90%'});
   $('.projects-content-sub').delay(400).slideToggle(1000);
 });
+
 $('.portfolio').hover(
 	function(){
 		$('.portfolio-text').css({'color': '#FE123C'});
@@ -92,3 +94,9 @@ $('.red14').hover(
 		}, '2000');
   }
 );
+
+$(function() {
+  setTimeout(function(){
+    $('#notice').slideUp(800);
+  }, 1500);
+});
