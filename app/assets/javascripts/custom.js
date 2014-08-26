@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	$('#last-initial').animate({'margin-left' : '72%'}, 1480);
+	$('#last-initial').animate({'margin-left' : '72%'}, 1080);
 	$('#last-initial').delay(0).animate({'margin-left' : '0%'});
-	$('#first-name').delay(1490).fadeIn(3000);
-	$('#last-name').delay(1500).fadeIn(3000);
+	$('#first-name').delay(1090).fadeIn(3000);
+	$('#last-name').delay(1100).fadeIn(3000);
 });
 
 $('.about-me').click(function(){
@@ -15,10 +15,15 @@ $('.about-me-text').click(function(){
 $('.portfolio').click(function(){
 	$('.projects-content').animate({'width': '90%'});
   $('.projects-content-sub').delay(400).slideToggle(1000);
+  // closes 'skills' bar when portfolio opens
+  $('.footer-container').css({'display' : 'none'});
+
 });
 $('.portfolio-text').click(function(){
 	$('.projects-content').animate({'width': '90%'});
   $('.projects-content-sub').delay(400).slideToggle(1000);
+  // closes 'skills' bar when portfolio opens
+  $('.footer-container').css({'display' : 'none'});
 });
 $('.med-text').click(function() {
 	$('.activated').removeClass('activated');
@@ -31,6 +36,28 @@ $('.contact-animate').click(function() {
 	$('.mail-animate').animate({'margin-top' : '100%'}, 2000);
 	$('.arrow').delay(2200).animate({'margin-left' : '10%'}, 1000);
 });
+
+// footer/skills animations
+$('.skills').click(function(){
+	$('.footer-container').slideToggle('fast');
+	$('.skills-body-top').animate({'margin-left' : '-85%'}, 23000);
+});
+
+$('#ticker-title1').click(function() {
+	$(this).css({'color' : '#FFFF00'});
+	$('#ticker-title2').css({'color' : '#555555'});
+});
+$('#ticker-title2').click(function() {
+	$(this).css({'color' : '#FFFF00'});
+	$('#ticker-title1').css({'color' : '#555555'});
+});
+
+function blinker() {
+    $('#skill-select').fadeOut(500);
+    $('#skill-select').fadeIn(500);
+}
+
+setInterval(blinker, 2700);
 
 $('.portfolio').hover(
 	function(){
@@ -112,7 +139,6 @@ $('.red14').hover(
 		}, '2000');
   }
 );
-
 $(function() {
   setTimeout(function(){
     $('#notice').slideUp(800);

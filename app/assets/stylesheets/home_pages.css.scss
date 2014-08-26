@@ -151,7 +151,7 @@ ul a {
 	background-repeat: no-repeat;
 	width: 49%;
 	height: 150px;
-	display: inline-block;
+	display: block;
 }
 .proj-2 {
 	background: url(hsh.png);
@@ -159,7 +159,7 @@ ul a {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 150px;
-	display: inline-block;
+	display: block;
 }
 .proj-3 {
 	background: url(tapp-data.jpg);
@@ -167,7 +167,7 @@ ul a {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 150px;
-	display: inline-block;
+	display: block;
 }
 .proj-4 {
 	background: url(ttt3001.png);
@@ -175,7 +175,23 @@ ul a {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 150px;
-	display: inline-block;
+	display: block;
+}
+.proj-5 {
+	background: url(disneyPoster.jpg);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 150px;
+	display: block;
+}
+.proj-6 {
+	background: url(yelpPostcard.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 150px;
+	display: block;
 }
 p {
 	font-family: 'Noto Sans', sans-serif;
@@ -352,11 +368,69 @@ li .nav-styling a:hover {
 #last-name {
 	display: none;
 }
-// .proj-1b {
-// 	background: url(alemailSS2-1.jpg);
-// 	background-size: 100%;
-// 	background-repeat: no-repeat;
-// 	width: 49%;
-// 	height: 150px;
-// 	display: inline-block;
-// }
+
+// footer/skills css
+.footer-container {
+	width: 100%;
+	height: 8%;
+	position: absolute;
+	bottom: 3%;
+	background-color: #000;
+	border-top: 2px solid rgba(225, 255, 0, .6);
+	border-bottom: 2px solid rgba(225, 255, 0, .6);
+	display: none;
+	text-align: center;
+}
+#skills-heading {
+	font-size: 1em;
+	width: 100%;
+	margin-left: 2%;
+	position: relative;
+	font-family: 'Codystar', cursive;
+	display: inline;
+}
+#ticker-title1 {
+	color: #FFFF00;
+}
+#ticker-title2 {
+	color: #555555;
+}
+#skill-select {
+	font-size: 0.7em;
+	color: $hotpink;
+}
+.skills-container {
+	width: 100%;
+	overflow-y: scroll;
+}
+.skills-bar {
+	width: 580%;
+	position: relative;
+}
+.skills-body-top {
+	margin-left: -10%;
+	font-size: 0.9em;
+	font-family: 'Codystar', cursive;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+.tabs-content > .content {
+	padding: 0;
+}
+.stock {
+	padding-left: 3em;
+}
+.stock:nth-child(3n+0) {
+	color: lime;
+}
+.stock:nth-child(3n+1) {
+	color: red;
+}
+.ticker {
+	padding-left: 1.5em;
+	color: yellow;
+	font-size: 0.5em;
+}
+#ticker-repeat {
+	color: $purplepastel;
+	border: 2px solid $purplepastel;
+} 
