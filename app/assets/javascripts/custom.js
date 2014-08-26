@@ -1,10 +1,11 @@
+// animates my initials until full name is displayed
 $(document).ready(function() {
-	$('#last-initial').animate({'margin-left' : '72%'}, 1080);
+	$('#last-initial').animate({'margin-left' : '68%'}, 1095);
 	$('#last-initial').delay(0).animate({'margin-left' : '0%'});
 	$('#first-name').delay(1090).fadeIn(3000);
 	$('#last-name').delay(1100).fadeIn(3000);
 });
-
+//-----
 $('.about-me').click(function(){
   $('.main-content-sub').slideToggle('slow');
 });
@@ -51,14 +52,13 @@ $('#ticker-title2').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title1').css({'color' : '#555555'});
 });
-
+// blinking 'select' option in skills
 function blinker() {
     $('#skill-select').fadeOut(500);
     $('#skill-select').fadeIn(500);
 }
-
 setInterval(blinker, 2700);
-
+//-----
 $('.portfolio').hover(
 	function(){
 		$('.portfolio-text').css({'color': '#FE123C'});

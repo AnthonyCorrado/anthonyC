@@ -26,6 +26,11 @@ body{
 h5 {
 	color: #ddd;
 }
+h6 {
+	margin-top: -3%;
+	color: #aaa;
+	font-size: 0.7em;
+}
 #title-text {
 	color: #ddd;
 	font-family: $font;
@@ -34,6 +39,7 @@ h5 {
 }
 .title-area {
 	padding-left: 2%;
+	overflow: hidden;
 
 }
 .top-bar-section ul li > a {
@@ -360,7 +366,8 @@ li .nav-styling a:hover {
 	position: absolute;
 	z-index: 5;
 }
-#last-initial {
+#first-initial, #last-initial {
+	font-size: 1.2em;
 }
 #first-name {
 	display: none;
