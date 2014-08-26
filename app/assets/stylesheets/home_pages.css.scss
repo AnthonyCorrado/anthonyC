@@ -9,7 +9,6 @@ $hotpink : rgba(254,18,60, 1);
 $font: 'Oswald', sans-serif;
 $darkgray : #333333;
 
-
 nav.top-bar {
  text-align:center;
  height: 10%;
@@ -35,6 +34,7 @@ h5 {
 }
 .title-area {
 	padding-left: 2%;
+
 }
 .top-bar-section ul li > a {
 	font-size: 1.3em;
@@ -44,13 +44,27 @@ h5 {
 
 }
 .heading-text {
+	padding-left: 2%;
 	font-size: 1.3em;
 	font-family: $font;
 	text-shadow: -1px 3px 0px #000;
 	color: #ddd;
+	display: inline;
+}
+.med-text {
+	font-size: 1em;
+	display: inline;
+}
+ul a {
+	color: #ddd;
+	border: none;
+}
+.activated {
+	color: $darkteal + #444444;
 }
 .portfolio-text {
 	color: #ddd;
+	display: inline;
 }
 .right-box {
 	position: absolute;
@@ -84,7 +98,7 @@ h5 {
 	margin-left: 5%;
 	margin-top: 5%;
 	padding: 0 1.5%;
-	width: 10%;
+	width: 20%;
 	position: relative;
 	background-color: rgba(0, 0, 0, .4);
 	border: 1px solid $hotpink;
@@ -93,6 +107,10 @@ h5 {
 .projects-content-sub {
 	display: none;
 	width: 96%;
+	margin-top: 2%;
+}
+#projects-tabs {
+	display: inline;
 }
 .project-grid {
 	margin-left: 7%;
@@ -199,6 +217,7 @@ li .nav-styling a:hover {
 	border: 3px solid $hotpink;
 	outline: 1px solid transparent;
 	border-radius: 0;
+	background-color: #35404d;
 }
 .red1:hover {
 	color: $hotpink;
@@ -264,7 +283,7 @@ li .nav-styling a:hover {
 	margin-top: -35%;
 	padding-left: 3%;
 	position: absolute;
-	background-color: $darkteal;
+	background-color: rgba(0, 0, 0, .5);
 	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
@@ -306,6 +325,10 @@ li .nav-styling a:hover {
 	color: #ddd;
 }
 .contact-submit {
+	background-color: #5f8bb7;
+	width: 50%;
+	height: 30px;
+	color: #ddd;
 }
 #notice {
 	color: #2D854B;
@@ -321,7 +344,14 @@ li .nav-styling a:hover {
 	position: absolute;
 	z-index: 5;
 }
-
+#last-initial {
+}
+#first-name {
+	display: none;
+}
+#last-name {
+	display: none;
+}
 // .proj-1b {
 // 	background: url(alemailSS2-1.jpg);
 // 	background-size: 100%;

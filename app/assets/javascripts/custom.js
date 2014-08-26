@@ -1,3 +1,10 @@
+$(document).ready(function() {
+	$('#last-initial').animate({'margin-left' : '72%'}, 1480);
+	$('#last-initial').delay(0).animate({'margin-left' : '0%'});
+	$('#first-name').delay(1490).fadeIn(3000);
+	$('#last-name').delay(1500).fadeIn(3000);
+});
+
 $('.about-me').click(function(){
   $('.main-content-sub').slideToggle('slow');
 });
@@ -12,6 +19,9 @@ $('.portfolio').click(function(){
 $('.portfolio-text').click(function(){
 	$('.projects-content').animate({'width': '90%'});
   $('.projects-content-sub').delay(400).slideToggle(1000);
+});
+$('.med-text').click(function() {
+	$('.activated').removeClass('activated');
 });
 
 $('.contact-animate').click(function() {
