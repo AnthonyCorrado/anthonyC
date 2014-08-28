@@ -118,6 +118,24 @@ ul a {
 #projects-tabs {
 	display: inline;
 }
+#activated1 {
+	color: #ddd;
+}
+// #activated1:hover {
+// 	color: $hotpink;
+// }
+#activated2 {
+	color: #555555;
+}
+// #activated2:hover {
+// 	color: $hotpink;
+// }
+#activated3 {
+	color: #555555;
+}
+// #activated3:hover {
+// 	color: $hotpink;
+// }
 .project-grid {
 	margin-left: 7%;
 	width: 90%;
@@ -213,6 +231,73 @@ li .nav-styling a:hover {
 .top-bar-section ul li:hover:not(.has-form) > a {
 	color: $hotpink;
 }
+
+// photography image display section 
+
+.photo-grid {
+	width: 100%;
+	height: 580px;
+	margin-left: 2.5%;
+	overflow: scroll;
+}
+.photobox {
+	width: 45%;
+	height: 250px;
+	margin: 2% 2.5%;
+	position: relative;
+	float: left;
+}
+.pic1 {
+	background: url(HQSprite.png);
+	background-size: 390%;
+}
+.pic2 {
+	background: url(HQSprite.png) -378px 0px;
+	background-size: 392%;
+}
+.pic3 {
+	background: url(HQSprite.png) 0px -515px;
+	background-size: 393%;
+}
+.pic4 {
+	background: url(HQSprite.png) 0 -263px;
+	background-size: 393%;
+}
+.pic5 {
+	background: url(HQSprite.png) -756px 0;;
+	background-size: 386%;
+}
+.pic6 {
+	background: url(HQSprite.png) -396px -542px;
+	background-size: 406%;
+}
+.pic7 {
+	background: url(HQSprite.png) -378px -273px;
+	background-size: 393%;
+}
+.pic8 {
+	background: url(HQSprite.png) -756px -263px;
+	background-size: 393%;
+}
+.pic9 {
+	background: url(HQSprite.png) 0px -774px;
+	background-size: 393%;
+}
+.pic10	 {
+	background: url(HQSprite.png) -405px -800px;
+	background-size: 410%;
+}
+.wide-photobox {
+	width: 92.5%;
+	height: 240px;
+	margin: 2% 2.5%;
+	position: relative;
+	float: left;
+}
+.pic11	 {
+	background: url(HQSprite.png) -1670px -890px;
+	background-size: 317%;
+}
 .my-resume {
 	margin: 0 auto;
 	width: 90%;
@@ -220,7 +305,6 @@ li .nav-styling a:hover {
 	background: url(resumeAugust2014.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-
 }
 .reveal-modal {
 	height: 450px;
@@ -233,13 +317,14 @@ li .nav-styling a:hover {
 .contact-modal {
 	overflow: auto;
 	width: 100%;
+	height: 70%;
 	background: url(envelopeBG.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	border: 3px solid $hotpink;
+	border: 2px solid $hotpink;
 	outline: 1px solid transparent;
 	border-radius: 0;
-	background-color: #35404d;
+	background-color: #5d8ab9;
 }
 .red1:hover {
 	color: $hotpink;
@@ -310,7 +395,7 @@ li .nav-styling a:hover {
  	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	display: none;
- 	border-radius: 0 70px 0 30px;
+ 	border-radius: 0 50px 0 30px;
 }
 .mail-animate {
 	width: 75px;
@@ -367,7 +452,7 @@ li .nav-styling a:hover {
 	z-index: 5;
 }
 #first-initial, #last-initial {
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 #first-name {
 	display: none;
@@ -388,6 +473,20 @@ li .nav-styling a:hover {
 	display: none;
 	text-align: center;
 }
+.headache {
+	width: 100%;
+	position: absolute;
+	margin-top: -4%;
+	font-size: 2.1em;
+	color: #ddd;
+	text-shadow: -1px 3px 0px #000;
+	font-family: 'Permanent Marker', cursive;
+	display: none;
+}
+.migrane {
+	font-size: 0.6em;
+	margin-left: 5%;
+}
 #skills-heading {
 	font-size: 1em;
 	width: 100%;
@@ -395,16 +494,21 @@ li .nav-styling a:hover {
 	position: relative;
 	font-family: 'Codystar', cursive;
 	display: inline;
+	outline: none;
 }
+
 #ticker-title1 {
 	color: #FFFF00;
+	outline: none;
 }
 #ticker-title2 {
 	color: #555555;
+	outline: none;
 }
 #skill-select {
 	font-size: 0.7em;
 	color: $hotpink;
+	outline: none;
 }
 .skills-container {
 	width: 100%;
@@ -415,7 +519,7 @@ li .nav-styling a:hover {
 	position: relative;
 }
 .skills-body-top {
-	margin-left: -10%;
+	margin-left: -25%;
 	font-size: 0.9em;
 	font-family: 'Codystar', cursive;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -441,3 +545,8 @@ li .nav-styling a:hover {
 	color: $purplepastel;
 	border: 2px solid $purplepastel;
 } 
+// removes glow around input boxes. Will not affect UX
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}

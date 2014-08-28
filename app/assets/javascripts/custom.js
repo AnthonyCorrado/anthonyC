@@ -38,10 +38,30 @@ $('.contact-animate').click(function() {
 	$('.arrow').delay(2200).animate({'margin-left' : '10%'}, 1000);
 });
 
+// portfolio clickable tabs coloring
+$('#activated1').click(function() {
+	$(this).css({'color' : '#ddd'});
+	$('#activated2').css({'color' : '#555555'});
+	$('#activated3').css({'color' : '#555555'});
+});
+
+$('#activated2').click(function() {
+	$(this).css({'color' : '#ddd'});
+	$('#activated1').css({'color' : '#555555'});
+	$('#activated3').css({'color' : '#555555'});
+});
+$('#activated3').click(function() {
+	$(this).css({'color' : '#ddd'});
+	$('#activated1').css({'color' : '#555555'});
+	$('#activated2').css({'color' : '#555555'});
+});
+
 // footer/skills animations
 $('.skills').click(function(){
 	$('.footer-container').slideToggle('fast');
 	$('.skills-body-top').animate({'margin-left' : '-85%'}, 23000);
+	$('.headache').delay(5000).fadeIn(2000);
+	$('.headache').delay(15000).fadeOut(2000);
 });
 
 $('#ticker-title1').click(function() {
