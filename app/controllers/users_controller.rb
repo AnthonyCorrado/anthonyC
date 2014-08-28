@@ -10,17 +10,12 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
-
-		respond_to do |format|
 			if @user.save
 				UserMailer.welcome_email(@user).deliver
-				format.html { redirect_to(root_path, notice: 'Email was successfully sent') }
-        format.json { redirect_to(root_path, notice: 'Email was successfully sent') }
+        redirect_to root_path
       else
-        format.html { render action: 'new' }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        render 'new'
       end
-    end
   end
 
   def show
