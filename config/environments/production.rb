@@ -79,7 +79,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
     # config/environments/production.rb
-  config.action_mailer.default_url_options = { :host => 'http://anthony-test-portfolio' }
+  config.action_mailer.default_url_options = { :host => 'http://anthony-test-portfolio.herokuapp.com/' }
 
 
   config.action_mailer.delivery_method = :smtp
