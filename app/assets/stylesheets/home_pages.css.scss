@@ -153,7 +153,36 @@ ul a {
  	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
 }
+.proj-box:hover {
+	border-right: 1px solid rgba(254,18,60, 1);
+	border-left: 1px solid rgba(254,18,60, 1);
+	border-radius: 5px;
+}
 .proj-right {
+	background-color: $darkteal;
+	margin: 2% 0;
+	width: 40%;
+	display: inline-block;
+	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+}
+.proj-right:hover {
+	border-right: 1px solid rgba(254,18,60, 1);
+	border-left: 1px solid rgba(254,18,60, 1);
+	border-radius: 5px;
+}
+.proj-creative-box {
+	background-color: $darkteal;
+	margin: 2% 9% 2% 5%;
+	width: 40%;
+	display: inline-block;
+	float: left;
+	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+ 	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+ 	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+}
+.proj-creative-box-right {
 	background-color: $darkteal;
 	margin: 2% 0;
 	width: 40%;
