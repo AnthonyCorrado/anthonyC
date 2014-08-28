@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 				format.html { redirect_to(root_path, notice: 'Email was successful') }
         format.json { render json: @user, status: :created, location: @user }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to root_path }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

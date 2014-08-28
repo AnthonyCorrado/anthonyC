@@ -2,7 +2,6 @@
 <div class="small-mail-animate"></div>
 <div class="inner-form envelope-img">
 	<div class="contact-form-filler">
-		<% if @user != "" || @user != nil %>
 		<div><%= form_for(@user) do |f| %><div>
 			<label class="field-form">Name
 				<div><%= f.text_field :name  %></div>
@@ -15,7 +14,6 @@
 			</label>
 			<div><%= f.submit 'submit', :class => "contact-submit" %></div>
 			<% end %>
-		<% end %>
 		</div>
 	</div>
 </div>
