@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/name'
-
-  get 'users/email'
-
-  get 'users/message'
 
   resources :users
 
