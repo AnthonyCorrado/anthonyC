@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 				UserMailer.welcome_email(@user).deliver
         redirect_to url_for(:controller => :home_pages, :action => :index)
       else
+        redirect_to url_for(:controller => :home_pages, :action => :index)
       end
   end
 
