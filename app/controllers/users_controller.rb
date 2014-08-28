@@ -12,9 +12,8 @@ class UsersController < ApplicationController
 		@user = User.new(user_params)
 			if @user.save
 				UserMailer.welcome_email(@user).deliver
-        redirect_to root_path
+        redirect_to url_for(:controller => :home_pages, :action => :index)
       else
-        render 'new'
       end
   end
 
