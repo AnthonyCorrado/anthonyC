@@ -30,13 +30,21 @@ $('.med-text').click(function() {
 	$('.activated').removeClass('activated');
 });
 
-$('.contact-animate').click(function() {
-	$('.inner-form').delay(500).animate({'margin-left' : '55%'}, 1000);
-	$('.contact-message').delay(1500).fadeIn('slow');
-	$('.mail-animate').delay(1500).fadeIn('slow');
-	$('.mail-animate').animate({'margin-top' : '100%'}, 2000);
-	$('.arrow').delay(2200).animate({'margin-left' : '10%'}, 1000);
+$('.contact-animate').click(function(){
+	if ($(".arrow").css("display") == "none" ){
+				$('.small-mail-animate').delay(1500).fadeIn('slow');
+				$('.small-mail-animate').animate({'margin-top' : '100%'}, 2000);
+	}
+	else {
+		$('.inner-form').delay(500).animate({'margin-left' : '55%'}, 1000);
+		$('.contact-message').delay(1500).fadeIn('slow');
+		$('.mail-animate').delay(1500).fadeIn('slow');
+		$('.mail-animate').animate({'margin-top' : '100%'}, 2000);
+		$('.arrow').delay(2200).animate({'margin-left' : '10%'}, 1000);
+	}
 });
+
+
 
 // portfolio clickable tabs coloring
 $('#activated1').click(function() {

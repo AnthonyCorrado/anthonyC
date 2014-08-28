@@ -9,6 +9,11 @@ $hotpink : rgba(254,18,60, 1);
 $font: 'Oswald', sans-serif;
 $darkgray : #333333;
 
+
+.hide-when-large {
+	display: none;
+}
+
 nav.top-bar {
  text-align:center;
  height: 10%;
@@ -17,7 +22,9 @@ nav.top-bar {
  -moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  margin-right: 12%;
-
+}
+.small-nav-bar {
+	display: none;
 }
 body{
 	background-color: $darkteal;
@@ -36,6 +43,9 @@ h6 {
 	font-family: $font;
 	font-size: 2em;
 	text-shadow: -1px 3px 0px #000;
+}
+#small-title-text {
+	display: none;
 }
 .title-area {
 	padding-left: 2%;
@@ -115,6 +125,17 @@ ul a {
 	width: 96%;
 	margin-top: 2%;
 }
+.resume-content {
+	margin-left: 5%;
+	margin-top: 5%;
+	padding: 0 1.5%;
+	width: 20%;
+	position: relative;
+	background-color: rgba(0, 0, 0, .4);
+	border: 1px solid $hotpink;
+	outline: 1px solid transparent;
+}
+
 #projects-tabs {
 	display: inline;
 }
@@ -578,4 +599,143 @@ li .nav-styling a:hover {
 :focus {
   outline-color: transparent;
   outline-style: none;
+}
+@media (min-width: 1021px) {
+
+}
+@media (min-width: 0px) and (max-width: 1020px) {
+	body {
+	}
+	#title-text {
+		line-height: 1.5;
+		font-size: 1.5em;
+	}
+	.top-bar-section ul li > a {
+		font-size: 1em;
+	}
+}
+@media (min-width: 0px) and (max-width: 870px) {
+	#title-text {
+		line-height: 2;
+	}
+	.top-bar-section ul li > a {
+		line-height: 2.5;
+	}
+}
+@media (min-width: 0px) and (max-width: 820px) {
+	nav.top-bar {
+		height: 8.5%;
+	}
+	#title-text {
+		font-size: 1.3em;
+	}
+	.top-bar-section ul li > a {
+		margin-top: 4%;
+	}
+}
+@media (min-width: 0px) and (max-width: 640px) {
+	.top-bar-section ul li > a {
+		font-size: 0.7em;
+	}
+	nav.top-bar {
+		width: 100%;
+		height: 10%;
+		padding: 1%;
+	}
+	#title-text {
+		font-size: 2em;
+		line-height: 1.5;
+
+	}
+	.hide-when-large {
+		display: block;
+	}
+	.small-nav-bar {
+		display: inline-block;
+		width: 100%;
+		height: 8%;
+		background-color: blue;
+	}
+	.small-resume-sub {
+		display: none;
+		width: 96%;
+		margin-top: 2%;
+	}
+	.small-menu-text {
+		color: #ddd;
+		display: inline;
+	}
+	.contact-modal {
+		margin-left: 10%;
+		width: 80%;
+		background: none;
+		background-color: $darkteal;
+		border: 0;
+		border: 1px solid $hotpink;
+		outline: 0px solid transparent;
+	}
+	.contact-message {
+		display: none;
+	}
+	.contact-form-filler {
+		width: 200%;
+		margin-left: 25%;
+		margin-top: 30%;
+		padding-left: 35%;
+	}
+	#user_message {
+		width: 80%;
+	}
+	.contact-submit {
+		width: 30%;
+		margin-left: 50%;
+	}
+	.small-contact-message {
+		width: 100%;
+		text-align: center;
+		background-color: rgba(0, 0, 0, .5);
+		-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+	 	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+	 	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
+	}
+	#small-title-text {
+		color: #ddd;
+		font-family: $font;
+		font-size: 1.5em;
+		line-height: 3;
+		text-shadow: -1px 3px 0px #000;
+		display: inline;
+	}
+	.reveal-modal {
+		margin: 5%;
+		width: 90%;
+		min-height: 400px;
+		padding: 0;
+	}
+	.mail-animate {
+		display: none;
+	}
+	.small-mail-animate {
+		width: 50px;
+		height: 50px;
+		margin: -10% 0 0 88%;
+		position: absolute;
+		background: url(gmail-logo.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		z-index: 10;
+		display: none;
+	}
+	.projects-tabs {
+		width: 30%;
+	}
+	.resume-content {
+		width: 30%;
+	}
+	.projects-content {
+		width: 30%;
+	}
+	.arrow {
+		display: none;
+	}
 }
