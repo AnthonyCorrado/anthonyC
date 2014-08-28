@@ -13,8 +13,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home_pages#index'
 
-  get '/users', to: redirect('home_pages#index')
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
