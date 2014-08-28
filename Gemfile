@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'foundation-rails'
 gem 'figaro'
+gem 'rails_12factor'
