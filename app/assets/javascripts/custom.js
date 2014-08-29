@@ -66,16 +66,22 @@ $('#activated1').click(function() {
 	$('#activated2').css({'color' : '#555555'});
 	$('#activated3').css({'color' : '#555555'});
 });
-
+$('#small-activated1').click(function() {
+	$(this).css({'color' : '#ddd'});
+	$('#activated2').css({'color' : '#555555'});
+	$('#activated3').css({'color' : '#555555'});
+});
 $('#activated2').click(function() {
 	$(this).css({'color' : '#ddd'});
 	$('#activated1').css({'color' : '#555555'});
 	$('#activated3').css({'color' : '#555555'});
+	$('#small-activated1').css({'color' : '#555555'});
 });
 $('#activated3').click(function() {
 	$(this).css({'color' : '#ddd'});
 	$('#activated1').css({'color' : '#555555'});
 	$('#activated2').css({'color' : '#555555'});
+	$('#small-activated1').css({'color' : '#555555'});
 });
 
 // footer/skills animations

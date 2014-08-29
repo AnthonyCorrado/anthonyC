@@ -736,6 +736,7 @@ li .nav-styling a:hover {
 	.resume-content {
 		width: 40%;
 		margin-left: 5%;
+		padding: 1.6% 0;
 	}
 	.arrow {
 		display: none;
@@ -763,7 +764,7 @@ li .nav-styling a:hover {
 	.projects-content {
 		width: 90%;
 		margin-left: 5%;
-		padding: 0;
+		padding: 1.6% 0;
 	}
 	.projects-content-sub {
 		width: 100%;
@@ -782,7 +783,7 @@ li .nav-styling a:hover {
 	.main-content {
 		width: 90%;
 		margin-left: 5%;
-		padding: 0;
+		padding: 1.6% 0;
 	}
 	// mobile creative section
 	.proj-creative-box {
@@ -804,9 +805,9 @@ li .nav-styling a:hover {
 		display: none;
 	}
 	.my-resume {
-		height: 600px;
+		height: 120%;
 	}
 	.reveal-modal {
-		height: 300px;
+		height: 100%;
 	}
 }
