@@ -16,7 +16,7 @@ $(document).ready(function() {
 $('.about-me').click(function(){
   $('.main-content-sub').slideToggle('slow');
 });
-$('.about-me-text').click(function(){
+$('.main-content').click(function(){
   $('.main-content-sub').slideToggle('slow');
 });
 
@@ -29,7 +29,7 @@ $('.portfolio').click(function(){
 	}
 
 });
-$('.portfolio-text').click(function(){
+$('.portfolio-click').click(function(){
 	if(windowWidth > 768){
 		$('.projects-content').animate({'width': '90%'});
 		$('.projects-content-sub').delay(400).slideToggle(1000);

@@ -79,6 +79,7 @@ ul a {
 	color: $darkteal + #444444;
 }
 .portfolio-text {
+	width: 100%;
 	color: #ddd;
 	display: inline;
 }
@@ -301,46 +302,46 @@ li .nav-styling a:hover {
 	position: relative;
 	float: left;
 }
-.pic1 {
-	background: url(MQSprite.png);
-	background-size: 390%;
-}
-.pic2 {
-	background: url(MQSprite.png) -378px 0px;
-	background-size: 392%;
-}
-.pic3 {
-	background: url(MQSprite.png) 0px -515px;
-	background-size: 393%;
-}
-.pic4 {
-	background: url(MQSprite.png) 0 -263px;
-	background-size: 393%;
-}
-.pic5 {
-	background: url(MQSprite.png) -756px 0;;
-	background-size: 386%;
-}
-.pic6 {
-	background: url(MQSprite.png) -396px -542px;
-	background-size: 406%;
-}
-.pic7 {
-	background: url(MQSprite.png) -378px -273px;
-	background-size: 393%;
-}
-.pic8 {
-	background: url(MQSprite.png) -756px -263px;
-	background-size: 393%;
-}
-.pic9 {
-	background: url(MQSprite.png) 0px -774px;
-	background-size: 393%;
-}
-.pic10	 {
-	background: url(MQSprite.png) -405px -800px;
-	background-size: 410%;
-}
+	.pic1 {
+		background: url(MQSprite.png);
+		background-size: 390%;
+	}
+	.pic2 {
+		background: url(MQSprite.png) 34.65% 0px;
+		background-size: 392%;
+	}
+	.pic3 {
+		background: url(MQSprite.png) 0px 67%;
+		background-size: 393%;
+	}
+	.pic4 {
+		background: url(MQSprite.png) 0 34.3%;
+		background-size: 393%;
+	}
+	.pic5 {
+		background: url(MQSprite.png) 69.7% 0;;
+		background-size: 386%;
+	}
+	.pic6 {
+		background: url(MQSprite.png) 34.84% 67.4%;
+		background-size: 412%;
+	}
+	.pic7 {
+		background: url(MQSprite.png) 34.54% 36.3%;
+		background-size: 393%;
+	}
+	.pic8 {
+		background: url(MQSprite.png) 69.5% 36%;
+		background-size: 395%;
+	}
+	.pic9 {
+		background: url(MQSprite.png) 0px 101%;
+		background-size: 393%;
+	}
+	.pic10	 {
+		background: url(MQSprite.png) 34% 96.9%;
+		background-size: 425%;
+	}
 .wide-photobox {
 	width: 92.5%;
 	height: 240px;
@@ -365,7 +366,6 @@ li .nav-styling a:hover {
 	overflow: auto;
 	background-color: $grayblue - #444444;	
 	border: 3px solid $hotpink;
-	border-radius: 100% 0 90% 0;
 	outline: 1px solid transparent;
 }
 .contact-modal {
@@ -662,7 +662,7 @@ li .nav-styling a:hover {
 	}
 	.small-resume-sub {
 		display: none;
-		width: 96%;
+		width: 90%;
 		margin-top: 2%;
 	}
 	.small-menu-text {
@@ -735,7 +735,7 @@ li .nav-styling a:hover {
 	}
 	.resume-content {
 		width: 40%;
-		margin-left: 0;
+		margin-left: 5%;
 	}
 	.arrow {
 		display: none;
@@ -761,8 +761,8 @@ li .nav-styling a:hover {
 		width: 100%
 	}
 	.projects-content {
-		width: 100%;
-		margin-left: 0;
+		width: 90%;
+		margin-left: 5%;
 		padding: 0;
 	}
 	.projects-content-sub {
@@ -780,7 +780,8 @@ li .nav-styling a:hover {
 		float: left;
 	}
 	.main-content {
-		width: 100%;
+		width: 90%;
+		margin-left: 5%;
 		padding: 0;
 	}
 	// mobile creative section
@@ -797,51 +798,15 @@ li .nav-styling a:hover {
 	// mobile photography section
 	.photobox {
 		width: 90%;
-		height: 190px;
-	}
-	.pic1 {
-		background: url(MQSprite.png);
-		background-size: 390%;
-	}
-	.pic2 {
-		background: url(MQSprite.png) 34.65% 0px;
-		background-size: 392%;
-	}
-	.pic3 {
-		background: url(MQSprite.png) 0px 67%;
-		background-size: 393%;
-	}
-	.pic4 {
-		background: url(MQSprite.png) 0 34%;
-		background-size: 393%;
-	}
-	.pic5 {
-		background: url(MQSprite.png) 69.7% 0;;
-		background-size: 386%;
-	}
-	.pic6 {
-		background: url(MQSprite.png) 34.84% 67.6%;
-		background-size: 406%;
-	}
-	.pic7 {
-		background: url(MQSprite.png) 34.54% 36.3%;
-		background-size: 393%;
-	}
-	.pic8 {
-		background: url(MQSprite.png) 69.5% 36%;
-		background-size: 395%;
-	}
-	.pic9 {
-		background: url(MQSprite.png) 0px 101%;
-		background-size: 393%;
-	}
-	.pic10	 {
-		background: url(MQSprite.png) 34% 96.9%;
-		background-size: 410%;
+		height: 170px;
 	}
 	.wide-photobox {
 		display: none;
-
-}
-
+	}
+	.my-resume {
+		height: 600px;
+	}
+	.reveal-modal {
+		height: 300px;
+	}
 }
