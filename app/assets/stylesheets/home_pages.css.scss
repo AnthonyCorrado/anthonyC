@@ -597,11 +597,26 @@ li .nav-styling a:hover {
 	width: 100%;
 	overflow-y: scroll;
 }
+.skills-container-software {
+	width: 100%;
+	overflow-y: scroll;
+}
 .skills-bar {
 	width: 580%;
 	position: relative;
 }
+.software-skills-bar {
+	width: 580%;
+	position: relative;
+}
 .skills-body-top {
+	margin-left: -25%;
+	font-size: 0.9em;
+	font-family: 'Codystar', cursive;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+.software-skills {
+	display: none;
 	margin-left: -25%;
 	font-size: 0.9em;
 	font-family: 'Codystar', cursive;
@@ -881,7 +896,21 @@ li .nav-styling a:hover {
 		font-size: 0.6em;
 	}
 	.skills-bar {
-		width: 800%;
+		width: 1500%;
+	}
+	.skills-body-top {
+		margin-right: 10%;
+		width: 100%;
+		overflow: hidden;
+	}
+	.software-skills-bar {
+		width: 1580%;
+	}
+	.sofware-skills {
+		margin-right: 10%;
+		width: 100%;
+		overflow: hidden;
+		z-index: 20;
 	}
 	.stock, .ticker 	{
 		font-family: 'Geo', sans-serif;

@@ -87,15 +87,24 @@ $('#activated3').click(function() {
 // footer/skills animations
 $('.skills').click(function(){
 	$('.footer-container').slideToggle('fast');
-	$('.skills-body-top').animate({'margin-left' : '-85%'}, 23000);
 	$('.headache').delay(5000).fadeIn(2000);
 	$('.headache').delay(15000).fadeOut(2000);
+	if(windowWidth > 768){
+		$('.skills-body-top').animate({'margin-left' : '-85%'}, 23000);
+	}
+	else {
+		$('.skills-body-top').animate({'margin-left' : '-100%'}, 40000, 'linear');
+	}
 });
 
 $('#ticker-title1').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title2').css({'color' : '#555555'});
+	$('.skills-body-top').css({'display' : 'inline'});
+	$('#small-ticker-title2').css({'color' : '#555555'});
+	$('.software-skills').css({'display' : 'none'});
 });
+
 $('#ticker-title2').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title1').css({'color' : '#555555'});
@@ -103,7 +112,19 @@ $('#ticker-title2').click(function() {
 $('#small-ticker-title2').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title1').css({'color' : '#555555'});
+	$('.software-skills').css({'display' : 'inline'});
+	$('.skills-body-top').css({'display' : 'none'});
+	$('.software-skills').animate({'margin-left' : '-200%'}, 60000, 'linear');
 });
+
+// stops skill ticker when user manually scrolls
+$('.skills-body-top, .software-skills').bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
+	$(this).stop();
+});
+$('.skills-body-top, .software-skills').animate({ scrollTop: $(this).position().top }, 'slow', function(){
+  $('.skills-body-top, .software-skills').unbind("touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup");
+});
+
 // blinking 'select' option in skills
 function blinker() {
     $('#skill-select').fadeOut(500);
