@@ -1,9 +1,16 @@
+var windowWidth = $(window).width();
 // animates my initials until full name is displayed
 $(document).ready(function() {
-	$('#last-initial').animate({'margin-left' : '68%'}, 1095);
-	$('#last-initial').delay(0).animate({'margin-left' : '0%'});
-	$('#first-name').delay(1090).fadeIn(3000);
-	$('#last-name').delay(1100).fadeIn(3000);
+	if(windowWidth > 768){
+		$('#last-initial').animate({'margin-left' : '68%'}, 1095);
+		$('#last-initial').delay(0).animate({'margin-left' : '0%'});
+		$('#first-name').delay(1090).fadeIn(3000);
+		$('#last-name').delay(1100).fadeIn(3000);
+	}
+	else {
+		$('#first-name').fadeIn(3000);
+		$('#last-name').fadeIn(3000);
+	}
 });
 //-----
 $('.about-me').click(function(){
@@ -14,17 +21,24 @@ $('.about-me-text').click(function(){
 });
 
 $('.portfolio').click(function(){
-	$('.projects-content').animate({'width': '90%'});
-  $('.projects-content-sub').delay(400).slideToggle(1000);
-  // closes 'skills' bar when portfolio opens
-  $('.footer-container').css({'display' : 'none'});
+	if(windowWidth > 768){
+		$('.projects-content').animate({'width': '90%'});
+		$('.projects-content-sub').delay(400).slideToggle(1000);
+		// closes 'skills' bar when portfolio opens
+		$('.footer-container').css({'display' : 'none'});
+	}
 
 });
 $('.portfolio-text').click(function(){
-	$('.projects-content').animate({'width': '90%'});
-  $('.projects-content-sub').delay(400).slideToggle(1000);
-  // closes 'skills' bar when portfolio opens
-  $('.footer-container').css({'display' : 'none'});
+	if(windowWidth > 768){
+		$('.projects-content').animate({'width': '90%'});
+		$('.projects-content-sub').delay(400).slideToggle(1000);
+		// closes 'skills' bar when portfolio opens
+		$('.footer-container').css({'display' : 'none'});
+	}
+	else {
+		$('.projects-content-sub').delay(400).slideToggle(1000);
+	}
 });
 $('.med-text').click(function() {
 	$('.activated').removeClass('activated');

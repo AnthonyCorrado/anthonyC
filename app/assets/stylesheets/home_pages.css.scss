@@ -730,12 +730,43 @@ li .nav-styling a:hover {
 		width: 30%;
 	}
 	.resume-content {
-		width: 30%;
-	}
-	.projects-content {
-		width: 30%;
+		width: 40%;
+		margin-left: 0;
 	}
 	.arrow {
 		display: none;
+	}
+	#first-initial, #last-initial {
+	font-size: 1em;
+	}
+	#first-name, #last-name {
+		display: none;
+	}
+	.project-grid {
+		margin: 0 auto;
+		width: 100%
+	}
+	.projects-content {
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
+	.projects-content-sub {
+		width: 100%;
+		margin: 0;
+	}
+	.proj-box {
+		width: 90%;
+		margin-top: 5%;
+	}
+	.proj-right {
+		margin-left: 5%;
+		margin-top: 5%;
+		width: 90%;
+		float: left;
+	}
+	.main-content {
+		width: 100%;
+		padding: 0;
 	}
 }
