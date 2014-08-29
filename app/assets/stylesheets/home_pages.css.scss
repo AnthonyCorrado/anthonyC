@@ -742,6 +742,7 @@ li .nav-styling a:hover {
 	#first-name, #last-name {
 		display: none;
 	}
+	// mobile projects and web dev section 
 	.project-grid {
 		margin: 0 auto;
 		width: 100%
@@ -769,4 +770,65 @@ li .nav-styling a:hover {
 		width: 100%;
 		padding: 0;
 	}
+	// mobile creative section
+	.proj-creative-box {
+		width: 90%;
+		margin-top: 5%;
+	}
+	.proj-creative-box-right {
+		margin-left: 5%;
+		margin-top: 5%;
+		width: 90%;
+		float: left;
+	}
+	// mobile photography section
+	.photobox {
+		width: 90%;
+		height: 190px;
+	}
+	.pic1 {
+		background: url(HQSprite.png);
+		background-size: 390%;
+	}
+	.pic2 {
+		background: url(HQSprite.png) -288px 0px;
+		background-size: 392%;
+	}
+	.pic3 {
+		background: url(HQSprite.png) 0px -392px;
+		background-size: 393%;
+	}
+	.pic4 {
+		background: url(HQSprite.png) 0 -200px;
+		background-size: 393%;
+	}
+	.pic5 {
+		background: url(HQSprite.png) -576px 0;;
+		background-size: 386%;
+	}
+	.pic6 {
+		background: url(HQSprite.png) -302px -412px;
+		background-size: 406%;
+	}
+	.pic7 {
+		background: url(HQSprite.png) -290px -213px;
+		background-size: 393%;
+	}
+	.pic8 {
+		background: url(HQSprite.png) -586px -210px;
+		background-size: 395%;
+	}
+	.pic9 {
+		background: url(HQSprite.png) 0px -594px;
+		background-size: 393%;
+	}
+	.pic10	 {
+		background: url(HQSprite.png) -302px -600px;
+		background-size: 410%;
+	}
+	.wide-photobox {
+		display: none;
+
+}
+
 }
