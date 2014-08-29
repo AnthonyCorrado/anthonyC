@@ -50,7 +50,26 @@ h6 {
 .title-area {
 	padding-left: 2%;
 	overflow: hidden;
-
+}
+// footer section ----- footer section --->
+.made-by {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .4);	
+	z-index: -100;
+}
+.footer-text {
+	font-size: 1em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style: italic;
+	text-align: right;
+	padding-right: 23%;
+	line-height: 2;
+	color: #aaa;
+}
+.spacebar {
+	margin-left: 0.5%;
 }
 .top-bar-section ul li > a {
 	font-size: 1.3em;
@@ -136,7 +155,6 @@ ul a {
 	border: 1px solid $hotpink;
 	outline: 1px solid transparent;
 }
-
 #projects-tabs {
 	display: inline;
 }
@@ -736,7 +754,7 @@ li .nav-styling a:hover {
 	.resume-content {
 		width: 40%;
 		margin-left: 5%;
-		padding: 1.6% 0;
+		padding: 1.6% 1%;
 	}
 	.arrow {
 		display: none;
@@ -764,7 +782,7 @@ li .nav-styling a:hover {
 	.projects-content {
 		width: 90%;
 		margin-left: 5%;
-		padding: 1.6% 0;
+		padding: 1.6% 1%;
 	}
 	.projects-content-sub {
 		width: 100%;
@@ -783,7 +801,7 @@ li .nav-styling a:hover {
 	.main-content {
 		width: 90%;
 		margin-left: 5%;
-		padding: 1.6% 0;
+		padding: 1.6% 1%;
 	}
 	// mobile creative section
 	.proj-creative-box {
@@ -809,5 +827,19 @@ li .nav-styling a:hover {
 	}
 	.reveal-modal {
 		height: 100%;
+	}
+	// mobile footer section -------->
+	.made-by {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, .4)	
+	}
+	.footer-text {
+		font-size: 0.6em;
+		text-align: center;
+	}
+	.spacebar {
+		margin-left: 1.5%;
 	}
 }
