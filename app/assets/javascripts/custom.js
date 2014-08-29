@@ -100,6 +100,10 @@ $('#ticker-title2').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title1').css({'color' : '#555555'});
 });
+$('#small-ticker-title2').click(function() {
+	$(this).css({'color' : '#FFFF00'});
+	$('#ticker-title1').css({'color' : '#555555'});
+});
 // blinking 'select' option in skills
 function blinker() {
     $('#skill-select').fadeOut(500);
