@@ -66,7 +66,7 @@ h6 {
 	text-align: right;
 	padding-right: 23%;
 	line-height: 2;
-	color: #aaa;
+	color: #bbb;
 }
 .spacebar {
 	margin-left: 0.5%;
@@ -378,6 +378,13 @@ li .nav-styling a:hover {
 	background: url(resumeAugust2014.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
+}
+.resume-loading {
+	color: #aaa;
+	position: absolute;
+	padding: 35%;
+	font-size: 1.2em;
+	z-index: -200;
 }
 .reveal-modal {
 	height: 450px;
@@ -836,8 +843,10 @@ li .nav-styling a:hover {
 		background-color: rgba(0, 0, 0, .4)	
 	}
 	.footer-text {
-		font-size: 0.6em;
+		font-size: 0.7em;
 		text-align: center;
+		padding-left: 14%;
+		color: #ddd;
 	}
 	.spacebar {
 		margin-left: 1.5%;
