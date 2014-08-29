@@ -142,6 +142,9 @@ ul a {
 #activated1 {
 	color: #ddd;
 }
+#small-activated1 {
+		display: none;
+	}
 // #activated1:hover {
 // 	color: $hotpink;
 // }
@@ -159,6 +162,7 @@ ul a {
 // }
 .project-grid {
 	margin-left: 7%;
+	margin-top: 2%;
 	width: 90%;
 	background-color: $darkteal + #444444;
 	border-left: 3px solid black;
@@ -743,6 +747,15 @@ li .nav-styling a:hover {
 		display: none;
 	}
 	// mobile projects and web dev section 
+	#small-activated1 {
+		display: inline-block;
+		font-size: 0.9em;
+		margin-top: 2%;
+		margin-left: 5%;
+	}
+	#activated1 {
+		display: none;
+	}
 	.project-grid {
 		margin: 0 auto;
 		width: 100%
@@ -803,27 +816,27 @@ li .nav-styling a:hover {
 		background-size: 393%;
 	}
 	.pic5 {
-		background: url(MQSprite.png) -576px 0;;
+		background: url(MQSprite.png) 69.7% 0;;
 		background-size: 386%;
 	}
 	.pic6 {
-		background: url(MQSprite.png) -302px -412px;
+		background: url(MQSprite.png) 34.84% 67.6%;
 		background-size: 406%;
 	}
 	.pic7 {
-		background: url(MQSprite.png) -290px -213px;
+		background: url(MQSprite.png) 34.54% 36.3%;
 		background-size: 393%;
 	}
 	.pic8 {
-		background: url(MQSprite.png) -586px -210px;
+		background: url(MQSprite.png) 69.5% 36%;
 		background-size: 395%;
 	}
 	.pic9 {
-		background: url(MQSprite.png) 0px -594px;
+		background: url(MQSprite.png) 0px 101%;
 		background-size: 393%;
 	}
 	.pic10	 {
-		background: url(MQSprite.png) -302px -600px;
+		background: url(MQSprite.png) 34% 96.9%;
 		background-size: 410%;
 	}
 	.wide-photobox {
