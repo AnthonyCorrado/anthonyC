@@ -137,7 +137,7 @@ $('#small-ticker-title2').click(function() {
 // });
 
 $('.skills-body-top, .software-skills').bind('scroll touchsmart touchmove onscroll mousedown wheel DOMMouseScroll mousewheel keyup', function(e){
- if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel"){
+ if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel" || e.type == "touchmove"){
   $('.skills-body-top, .software-skills').stop();
  }
 });
