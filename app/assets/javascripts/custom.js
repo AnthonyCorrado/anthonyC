@@ -118,11 +118,11 @@ $('#small-ticker-title2').click(function() {
 });
 
 // stops skill ticker when user manually scrolls
-$('.skills-body-top, .software-skills').bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
+$('.skills-body-top, .software-skills').bind("onscroll touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup", function(){
 	$(this).stop();
 });
 $('.skills-body-top, .software-skills').animate({ scrollTop: $(this).position().top }, 'slow', function(){
-  $('.skills-body-top, .software-skills').unbind("touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup");
+  $('.skills-body-top, .software-skills').unbind("onscroll touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup");
 });
 
 // blinking 'select' option in skills
