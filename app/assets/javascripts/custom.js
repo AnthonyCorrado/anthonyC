@@ -118,11 +118,17 @@ $('#small-ticker-title2').click(function() {
 });
 
 // stops skill ticker when user manually scrolls
-$('.skills-body-top, .software-skills').bind("onscroll touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup", function(){
-	$(this).stop();
-});
-$('.skills-body-top, .software-skills').animate({ scrollTop: $('.skills-body-top, .software-skills').position().top }, 'slow', function(){
-  $('.skills-body-top, .software-skills').unbind("onscroll touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup");
+// $('.skills-body-top, .software-skills').bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
+// 	$(this).stop();
+// });
+// $('.skills-body-top, .software-skills').animate({ scrollTop: $('html,body').position().top }, 'slow', function(){
+//   $('.skills-body-top, .software-skills').unbind("touchsmart touchmove onscroll mousedown DOMMouseScroll mousewheel keyup");
+// });
+
+$('.skills-body-top, .software-skills').bind('scroll touchsmart touchmove onscroll mousedown wheel DOMMouseScroll mousewheel keyup', function(e){
+ if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel"){
+  $('.skills-body-top, .software-skills').stop();
+ }
 });
 
 // blinking 'select' option in skills
