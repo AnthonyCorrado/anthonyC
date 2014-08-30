@@ -8,6 +8,8 @@ $(document).ready(function() {
 		$('#last-name').delay(1100).fadeIn(3000);
 	}
 	else {
+		$('#first-initial').delay(700).animate({'color' : '#DDD'}, 1000);
+		$('#last-initial').delay(700).animate({'color' : '#DDD'}, 1000);
 		$('#first-name').fadeIn(3000);
 		$('#last-name').fadeIn(3000);
 	}
