@@ -121,7 +121,7 @@ $('#small-ticker-title2').click(function() {
 $('.skills-body-top, .software-skills').bind("onscroll touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup", function(){
 	$(this).stop();
 });
-$('.skills-body-top, .software-skills').animate({ scrollTop: $(this).position().top }, 'slow', function(){
+$('.skills-body-top, .software-skills').animate({ scrollTop: $('.skills-body-top, .software-skills').position().top }, 'slow', function(){
   $('.skills-body-top, .software-skills').unbind("onscroll touchsmart touchmove scroll mousedown DOMMouseScroll mousewheel keyup");
 });
 
