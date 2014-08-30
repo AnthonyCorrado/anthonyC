@@ -841,6 +841,13 @@ li .nav-styling a:hover {
 		float: left;
 	}
 	// mobile photography section
+	.photography-loading {
+		color: #aaa;
+		position: absolute;
+		padding: 25% 36%;
+		font-size: 1.2em;
+		z-index: -200;
+	}
 	.photobox {
 		width: 90%;
 		height: 170px;
