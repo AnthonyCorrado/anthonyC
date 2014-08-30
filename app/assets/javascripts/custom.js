@@ -125,7 +125,7 @@ $('#small-ticker-title2').click(function() {
 	$('#ticker-title1').css({'color' : '#555555'});
 	$('.software-skills').css({'display' : 'block'});
 	$('.skills-body-top').css({'display' : 'none'});
-	$('.software-skills').animate({'margin-left' : '-200%'}, 60000, 'linear');
+	$('.software-skills').animate({'margin-left' : '-100%'}, 60000, 'linear');
 });
 
 // stops skill ticker when user manually scrolls
