@@ -905,15 +905,18 @@ li .nav-styling a:hover {
 	.skills-body-top {
 		margin-right: 10%;
 		width: 100%;
+		height: 50px;	
 		overflow: hidden;
 	}
 	.software-skills-bar {
 		width: 1900%;
 	}
-	.sofware-skills {
-		margin-right: 10%;
+	.software-skills {
+		margin-left: 0%;
 		width: 100%;
 		overflow: hidden;
+		display: block;
+		height: 50px;
 	}
 	.stock, .ticker, #ticker-repeat	{
 		font-family: 'Geo', sans-serif;

@@ -123,7 +123,7 @@ $('#ticker-title2').click(function() {
 $('#small-ticker-title2').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title1').css({'color' : '#555555'});
-	$('.software-skills').css({'display' : 'inline'});
+	$('.software-skills').css({'display' : 'block'});
 	$('.skills-body-top').css({'display' : 'none'});
 	$('.software-skills').animate({'margin-left' : '-200%'}, 60000, 'linear');
 });
