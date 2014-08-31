@@ -322,47 +322,50 @@ li .nav-styling a:hover {
 	float: left;
 }
 .photography-loading {
-	display: none;
+	margin: -70% -4%;
+	position: absolute;
+	z-index: -200;
+	background: url(loading.gif) 0% 0% no-repeat;
 }
 .pic1 {
 	background: url(MQSprite.png);
-	background-size: 390%;
+	background-size: 395%;
 }
 .pic2 {
 	background: url(MQSprite.png) 34.65% 0px;
-	background-size: 392%;
+	background-size: 397%;
 }
 .pic3 {
 	background: url(MQSprite.png) 0px 67%;
-	background-size: 393%;
+	background-size: 398%;
 }
 .pic4 {
 	background: url(MQSprite.png) 0 34.3%;
-	background-size: 393%;
+	background-size: 398%;
 }
 .pic5 {
 	background: url(MQSprite.png) 69.7% 0;;
-	background-size: 386%;
+	background-size: 391%;
 }
 .pic6 {
 	background: url(MQSprite.png) 34.84% 67.4%;
-	background-size: 412%;
+	background-size: 418%;
 }
 .pic7 {
 	background: url(MQSprite.png) 34.54% 36.3%;
-	background-size: 393%;
+	background-size: 399%;
 }
 .pic8 {
 	background: url(MQSprite.png) 69.5% 36%;
-	background-size: 395%;
+	background-size: 401%;
 }
 .pic9 {
 	background: url(MQSprite.png) 0px 101%;
-	background-size: 393%;
+	background-size: 399%;
 }
 .pic10	 {
 	background: url(MQSprite.png) 34% 96.9%;
-	background-size: 425%;
+	background-size: 431%;
 }
 .wide-photobox {
 width: 92.5%;
@@ -384,23 +387,12 @@ float: left;
 	background-repeat: no-repeat;
 }
 .resume-loading {
-	color: #aaa;
 	position: absolute;
-	padding: 35%;
-	font-size: 1.2em;
+	padding: 49%;
 	z-index: -200;
-}
-#loading-modal {
 	background: url(loading.gif) 50% 50% no-repeat;
-	background-size: 5%;
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
 }
+
 .reveal-modal {
 	height: 450px;
 	overflow: auto;
@@ -860,15 +852,16 @@ float: left;
 	}
 	// mobile photography section
 	.photography-loading {
+		background: url(loading.gif) 50% 50% no-repeat;
+		width: 100%;
+		height: 100%;
 		color: #aaa;
 		position: absolute;
-		padding: 25% 36%;
-		font-size: 1.2em;
 		z-index: -200;
 	}
 	.photobox {
 		width: 90%;
-		height: 170px;
+		height: 185px;
 	}
 	.wide-photobox {
 		display: none;
@@ -884,7 +877,7 @@ float: left;
 		width: 100%;
 		position: fixed;
 		bottom: 0;
-		background-color: rgba(0, 0, 0, .4)	
+		background-color: rgba(0, 0, 0, .4);
 	}
 	.footer-text {
 		font-size: 0.9em;
@@ -957,5 +950,18 @@ float: left;
 	.migrane {
 		font-size: 1em;
 		margin-left: 5%;
+	}
+}
+@media (min-width: 0px) and (max-width: 340px) {
+
+	.photobox {
+		width: 90%;
+		height: 170px;
+	}
+	.spacebar {
+		margin-left: 1%;
+	}
+	.footer-text {
+		font-size: 0.8em;
 	}
 }

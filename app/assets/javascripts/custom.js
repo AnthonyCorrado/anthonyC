@@ -47,14 +47,9 @@ $('.portfolio-click').click(function(){
 	toggleState++;
 });
 
-// show loading image
-$('#loading-modal').show();
-// main image loaded ?
-$('.my-resume').on('load', function(){
-  // hide/remove the loading image
-  $('#loading-modal').hide();
+$('#small-menu-text').click(function () {
+	$('.resume-loading').delay(3000).fadeOut(400);
 });
-
 
 $('.med-text').click(function() {
 	$('.activated').removeClass('activated');
@@ -73,6 +68,8 @@ $('.contact-animate').click(function(){
 		$('.arrow').delay(2200).animate({'margin-left' : '10%'}, 1000);
 	}
 });
+
+
 
 // portfolio clickable tabs coloring
 $('#activated1').click(function() {
@@ -93,16 +90,10 @@ $('#activated2').click(function() {
 });
 $('#activated3').click(function() {
 	$(this).css({'color' : '#ddd'});
+	$('.photography-loading').delay(3000).fadeOut(200);
 	$('#activated1').css({'color' : '#555555'});
 	$('#activated2').css({'color' : '#555555'});
 	$('#small-activated1').css({'color' : '#555555'});
-});
-// show loading image
-$('#loading-modal').show();
-// main image loaded ?
-$('.photobox').on('load', function(){
-  // hide/remove the loading image
-  $('#loading-modal').hide();
 });
 
 // footer/skills animations
@@ -248,4 +239,15 @@ $(function() {
   setTimeout(function(){
     $('#notice').slideUp(800);
   }, 1500);
+});
+
+// footer hide/show on scroll to bottom
+
+$(window).scroll(function() {
+	if($(window).scrollTop() + $(window).height() > $(document).height() - 30){
+		$(".made-by").show();
+  }
+  else {
+    $(".made-by").hide();
+  }
 });
