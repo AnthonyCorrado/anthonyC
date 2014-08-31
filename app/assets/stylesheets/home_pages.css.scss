@@ -77,7 +77,6 @@ h6 {
 	font-family: $font;
 	text-shadow: -1px 3px 0px #000;
 	color: #ddd;
-
 }
 .heading-text {
 	padding-left: 2%;
@@ -155,6 +154,8 @@ ul a {
 	background-color: rgba(0, 0, 0, .4);
 	border: 1px solid $hotpink;
 	outline: 1px solid transparent;
+}
+.resume-click {
 }
 #projects-tabs {
 	display: inline;

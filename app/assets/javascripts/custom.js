@@ -242,9 +242,8 @@ $(function() {
 });
 
 // footer hide/show on scroll to bottom
-
 $(window).scroll(function() {
-	if($(window).scrollTop() + $(window).height() > $(document).height() - 30){
+	if($(window).scrollTop() + $(window).height() > $(document).height() - 20000){
 		$(".made-by").show();
   }
   else {
