@@ -323,10 +323,11 @@ li .nav-styling a:hover {
 	float: left;
 }
 .photography-loading {
-	margin: -70% -4%;
-	position: absolute;
+	margin: -70% -3%;
+	position: relative;
 	z-index: -200;
 	background: url(loading.gif) 0% 0% no-repeat;
+	display: none
 }
 .pic1 {
 	background: url(MQSprite.png);

@@ -48,7 +48,7 @@ $('.portfolio-click').click(function(){
 });
 
 $('#small-menu-text').click(function () {
-	$('.resume-loading').delay(3000).fadeOut(400);
+	$('.resume-loading').delay(3000).fadeOut(4000);
 });
 
 $('.med-text').click(function() {
@@ -89,6 +89,7 @@ $('#activated2').click(function() {
 	$('#small-activated1').css({'color' : '#555555'});
 });
 $('#activated3').click(function() {
+	$('.photography-loading').css({'display' : 'block'});
 	$(this).css({'color' : '#ddd'});
 	$('.photography-loading').delay(3000).fadeOut(200);
 	$('#activated1').css({'color' : '#555555'});
@@ -243,10 +244,10 @@ $(function() {
 
 // footer hide/show on scroll to bottom
 $(window).scroll(function() {
-	if($(window).scrollTop() + $(window).height() > $(document).height() - 20000){
-		$(".made-by").show();
+	if($(window).scrollTop() + $(window).height() > $(document).height() - 20){
+		$(".made-by").fadeIn(800);
   }
   else {
-    $(".made-by").hide();
+    $(".made-by").fadeOut(400);
   }
 });
