@@ -47,6 +47,15 @@ $('.portfolio-click').click(function(){
 	toggleState++;
 });
 
+// show loading image
+$('#loading-modal').show();
+// main image loaded ?
+$('.my-resume').on('load', function(){
+  // hide/remove the loading image
+  $('#loading-modal').hide();
+});
+
+
 $('.med-text').click(function() {
 	$('.activated').removeClass('activated');
 });
@@ -64,8 +73,6 @@ $('.contact-animate').click(function(){
 		$('.arrow').delay(2200).animate({'margin-left' : '10%'}, 1000);
 	}
 });
-
-
 
 // portfolio clickable tabs coloring
 $('#activated1').click(function() {
@@ -89,6 +96,13 @@ $('#activated3').click(function() {
 	$('#activated1').css({'color' : '#555555'});
 	$('#activated2').css({'color' : '#555555'});
 	$('#small-activated1').css({'color' : '#555555'});
+});
+// show loading image
+$('#loading-modal').show();
+// main image loaded ?
+$('.photobox').on('load', function(){
+  // hide/remove the loading image
+  $('#loading-modal').hide();
 });
 
 // footer/skills animations

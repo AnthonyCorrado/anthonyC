@@ -60,7 +60,7 @@ h6 {
 	z-index: -100;
 }
 .footer-text {
-	font-size: 1em;
+	font-size: 1.5em;
 	font-family: 'Engagement', cursive;
 	// font-family: 'Open Sans Condensed', sans-serif;
 	font-style: italic;
@@ -306,7 +306,7 @@ li .nav-styling a:hover {
 	color: $hotpink;
 }
 
-// photography image display section 
+// photography image display section --------->
 
 .photo-grid {
 	width: 100%;
@@ -321,52 +321,55 @@ li .nav-styling a:hover {
 	position: relative;
 	float: left;
 }
-	.pic1 {
-		background: url(MQSprite.png);
-		background-size: 390%;
-	}
-	.pic2 {
-		background: url(MQSprite.png) 34.65% 0px;
-		background-size: 392%;
-	}
-	.pic3 {
-		background: url(MQSprite.png) 0px 67%;
-		background-size: 393%;
-	}
-	.pic4 {
-		background: url(MQSprite.png) 0 34.3%;
-		background-size: 393%;
-	}
-	.pic5 {
-		background: url(MQSprite.png) 69.7% 0;;
-		background-size: 386%;
-	}
-	.pic6 {
-		background: url(MQSprite.png) 34.84% 67.4%;
-		background-size: 412%;
-	}
-	.pic7 {
-		background: url(MQSprite.png) 34.54% 36.3%;
-		background-size: 393%;
-	}
-	.pic8 {
-		background: url(MQSprite.png) 69.5% 36%;
-		background-size: 395%;
-	}
-	.pic9 {
-		background: url(MQSprite.png) 0px 101%;
-		background-size: 393%;
-	}
-	.pic10	 {
-		background: url(MQSprite.png) 34% 96.9%;
-		background-size: 425%;
-	}
+.photography-loading {
+	display: none;
+}
+.pic1 {
+	background: url(MQSprite.png);
+	background-size: 390%;
+}
+.pic2 {
+	background: url(MQSprite.png) 34.65% 0px;
+	background-size: 392%;
+}
+.pic3 {
+	background: url(MQSprite.png) 0px 67%;
+	background-size: 393%;
+}
+.pic4 {
+	background: url(MQSprite.png) 0 34.3%;
+	background-size: 393%;
+}
+.pic5 {
+	background: url(MQSprite.png) 69.7% 0;;
+	background-size: 386%;
+}
+.pic6 {
+	background: url(MQSprite.png) 34.84% 67.4%;
+	background-size: 412%;
+}
+.pic7 {
+	background: url(MQSprite.png) 34.54% 36.3%;
+	background-size: 393%;
+}
+.pic8 {
+	background: url(MQSprite.png) 69.5% 36%;
+	background-size: 395%;
+}
+.pic9 {
+	background: url(MQSprite.png) 0px 101%;
+	background-size: 393%;
+}
+.pic10	 {
+	background: url(MQSprite.png) 34% 96.9%;
+	background-size: 425%;
+}
 .wide-photobox {
-	width: 92.5%;
-	height: 240px;
-	margin: 2% 2.5%;
-	position: relative;
-	float: left;
+width: 92.5%;
+height: 240px;
+margin: 2% 2.5%;
+position: relative;
+float: left;
 }
 .pic11	 {
 	background: url(MQSprite.png) -1670px -890px;
@@ -386,6 +389,17 @@ li .nav-styling a:hover {
 	padding: 35%;
 	font-size: 1.2em;
 	z-index: -200;
+}
+#loading-modal {
+	background: url(loading.gif) 50% 50% no-repeat;
+	background-size: 5%;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 .reveal-modal {
 	height: 450px;
