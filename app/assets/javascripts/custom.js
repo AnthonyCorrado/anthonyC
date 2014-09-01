@@ -26,6 +26,7 @@ $('.main-content').click(function(){
 
 $('.portfolio').click(function(){
 	if(windowWidth > 768){
+		$(".made-by").slideToggle(800);
 		$('.projects-content').animate({'width': '90%'});
 		$('.projects-content-sub').delay(400).slideToggle(1000);
 		// closes 'skills' bar when portfolio opens
@@ -100,7 +101,7 @@ $('.skills').click(function(){
 	$('.headache').delay(4000).fadeIn(2000);
 	$('.headache').delay(15000).fadeOut(2000);
 	if(windowWidth > 768){
-		$('.skills-body-top').animate({'margin-left' : '-85%'}, 23000);
+		$('.skills-body-top').animate({'margin-left' : '-85%'}, 20000, 'linear');
 	}
 	else {
 		$('.skills-body-top').animate({'margin-left' : '-100%'}, 40000, 'linear');
@@ -123,6 +124,9 @@ $('#ticker-title1').click(function() {
 $('#ticker-title2').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title1').css({'color' : '#555555'});
+	$('.software-skills').css({'display' : 'block'});
+	$('.skills-body-top').css({'display' : 'none'});
+	$('.software-skills').animate({'margin-left' : '-100%'}, 36000, 'linear');
 });
 $('#small-ticker-title2').click(function() {
 	$(this).css({'color' : '#FFFF00'});
@@ -156,7 +160,7 @@ setInterval(blinker, 2700);
 //-----
 $('.portfolio').hover(
 	function(){
-		$('.portfolio-text').css({'color': '#FE123C'});
+		$('.portfolio-text').css({'color': '#29ABA4'});
 	},
 	function(){
 		$('.portfolio-text').css({
@@ -166,7 +170,7 @@ $('.portfolio').hover(
 );
 $('.portfolio-text').hover(
 	function(){
-		$('.portfolio-text').css({'color': '#FE123C'});
+		$('.portfolio-text').css({'color': '#29ABA4'});
 	},
 	function(){
 		$('.portfolio-text').css({
@@ -176,7 +180,7 @@ $('.portfolio-text').hover(
 );
 $('.portfolio-text').hover(
 	function(){
-		$('.port-text-header').css({'color': '#FE123C'});
+		$('.port-text-header').css({'color': '#29ABA4'});
 	},
 	function(){
 		$('.portfolio-text').css({
@@ -186,7 +190,7 @@ $('.portfolio-text').hover(
 );
 $('.about-me').hover(
 	function(){
-		$('.about-me-text').css({'color': '#FE123C'});
+		$('.about-me-text').css({'color': '#29ABA4'});
 	},
 	function(){
 		$('.about-me-text').css({
@@ -196,7 +200,7 @@ $('.about-me').hover(
 );
 $('.about-me-text').hover(
 	function(){
-		$('.about-me-text').css({'color': '#FE123C'});
+		$('.about-me-text').css({'color': '#29ABA4'});
 	},
 	function(){
 		$('.about-me-text').css({
@@ -240,15 +244,22 @@ $(function() {
   }, 1500);
 });
 
-// footer hide/show on scroll to bottom
-// $(window).scroll(function() {
-// 	if($(window).scrollTop() < 10) {
-// 		$(".made-by").css({'display' : 'block'});
-// 	}
-// 	if($(window).scrollTop() + $(window).height() > $(document).height() - 20){
-// 		$(".made-by").fadeIn(800);
-//   }
-//   else {
-//     $(".made-by").fadeOut(400);
-//   }
-// });
+//animations on startup -------------->
+$(document).ready(function() {
+	// ribbons flow over and up side bar
+	if(windowWidth > 768){
+		$('.made-by').animate({'width' : '80%'}, 750, 'linear');
+		$('.ribbon1').animate({'width' : '80%'}, 2000, 'linear');
+		$('.ribbon2').animate({'width' : '80%'}, 1500, 'linear');
+		$('.ribbon3').animate({'width' : '80%'}, 1000, 'linear');
+		$('.footer-text').delay(1000).fadeIn(2000);
+		$('.ribbon1-right').delay(2000).animate({'width' : '100%'}, 500);
+		$('.ribbon2-right').delay(1500).animate({'width' : '100%'}, 500);
+		$('.ribbon3-right').delay(1000).animate({'width' : '100%'}, 500);
+		$('.made-by-right').delay(700).animate({'width' : '100%'}, 500);
+		$('.background-cover').animate({'width' : '100%'}, 2000);
+	}
+	else {
+		$('.footer-text').delay(500).fadeIn(1000);
+	}
+});
