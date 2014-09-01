@@ -47,9 +47,6 @@ $('.portfolio-click').click(function(){
 	toggleState++;
 });
 
-$('#small-menu-text').click(function () {
-	$('.resume-loading').delay(3000).fadeOut(4000);
-});
 
 $('.med-text').click(function() {
 	$('.activated').removeClass('activated');
@@ -244,7 +241,10 @@ $(function() {
 
 // footer hide/show on scroll to bottom
 $(window).scroll(function() {
-	if($(window).scrollTop() + $(window).height() > $(document).height() - 20){
+	if($(window).scrollTop() < 10) {
+		$(".made-by").css({'display' : 'block'});
+	}
+	else if($(window).scrollTop() + $(window).height() > $(document).height() - 20){
 		$(".made-by").fadeIn(800);
   }
   else {

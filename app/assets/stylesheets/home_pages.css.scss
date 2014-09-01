@@ -324,7 +324,7 @@ li .nav-styling a:hover {
 }
 .photography-loading {
 	margin: -70% -3%;
-	position: relative;
+	position: absolute;
 	z-index: -200;
 	background: url(loading.gif) 0% 0% no-repeat;
 	display: none
@@ -389,10 +389,11 @@ float: left;
 	background-repeat: no-repeat;
 }
 .resume-loading {
+	width: 100%;
+	height: 20%;
 	position: absolute;
-	padding: 49%;
 	z-index: -200;
-	background: url(loading.gif) 50% 50% no-repeat;
+	background: url(loading.gif) 50% 100% no-repeat;
 }
 
 .reveal-modal {
