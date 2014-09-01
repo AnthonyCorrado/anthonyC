@@ -59,11 +59,11 @@ $('.contact-animate').click(function(){
 		$('.small-mail-animate').animate({'margin-top' : '100%'}, 2000);
 	}
 	else {
-		$('.inner-form').delay(500).animate({'margin-left' : '55%'}, 1000);
+		$('.contact-form-filler').delay(500).animate({'margin-left' : '45%'}, 1000);
 		$('.contact-message').delay(1500).fadeIn('slow');
 		$('.mail-animate').delay(1500).fadeIn('slow');
 		$('.mail-animate').animate({'margin-top' : '100%'}, 2000);
-		$('.arrow').delay(2200).animate({'margin-left' : '10%'}, 1000);
+		$('.arrow').delay(2800).animate({'margin-left' : '-100%'}, 1000);
 	}
 });
 

@@ -444,7 +444,6 @@ float: left;
 	border: 2px solid $mintgreen;
 	outline: 1px solid transparent;
 	border-radius: 0;
-	background-color: #5d8ab9;
 }
 .red1:hover, .red2:hover, .red3:hover, .red4:hover, .red5:hover  
 .red6:hover, .red7:hover, .red8:hover, .red9:hover, .red10:hover
@@ -463,28 +462,29 @@ float: left;
 	outline: 1px solid transparent;
 }
 .contact-form-filler {
-	margin-top: 30%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, .5);
-	padding: 3%;
-	border: 5px solid rgba(0, 0, 0, .5);
+	margin-top: 10%;
+	width: 50%;
+	background-color: $darkblue;
+	padding: 3% 3% 10% 3%;
+	border: 2px solid rgba(0, 0, 0, .5);
 }
 .contact-message {
-	width: 40%;
-	margin-top: -35%;
-	padding-left: 3%;
-	position: absolute;
-	background-color: rgba(0, 0, 0, .5);
+	margin-top: 0 auto;
+	padding: 0 3%;
+	width: 100%;
+	float: left;
+	text-align: center;
+
+	background-color: $darkblue;
 	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	display: none;
- 	border-radius: 0 50px 0 30px;
 }
 .mail-animate {
 	width: 75px;
 	height: 75px;
-	margin: -30% 0 0 25%;
+	margin: 0% 0 0 80%;
 	position: absolute;
 	background: url(gmail-logo.png);
 	background-size: 100%;
@@ -493,10 +493,11 @@ float: left;
 	display: none;
 }
 .arrow {
+	float: left;
 	width: 40%;
 	height: 100%;
-	margin-top: -20%;
-	margin-left: -100%;
+	margin-top: 32%;
+	margin-left: -150%;
 	background: url(arrow.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -510,14 +511,20 @@ float: left;
 }
 #user_name, #user_email {
 	height: 2em;
-	width: 80%;
+	width: 100%;
+
 }
+#user_message {
+		width: 100%;
+
+	}
 .field-form {
 	color: #ddd;
 }
 .contact-submit {
-	background-color: #5f8bb7;
-	width: 50%;
+	background-color: rgba(31, 40, 52, 1);
+	margin-left: 70%;
+	width: 30%;
 	height: 30px;
 	color: #ddd;
 }
@@ -653,7 +660,7 @@ float: left;
 	border: 2px solid $purplepastel;
 } 
 // background ribbon animations -------------------------------------------->
-	
+
 	.ribbon1 {
 		bottom: 20%;
 		margin-top: 30.5%;
@@ -809,9 +816,6 @@ float: left;
 	.contact-form-filler {
 		width: 100%;
 		margin-top: 10%;
-	}
-	#user_message {
-		width: 100%;
 	}
 	.contact-submit {
 		width: 30%;
