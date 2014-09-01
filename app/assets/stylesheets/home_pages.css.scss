@@ -653,8 +653,6 @@ float: left;
 	border: 2px solid $purplepastel;
 } 
 // background ribbon animations -------------------------------------------->
-
-@media (min-width: 640px) and (max-width: 3000px) {
 	
 	.ribbon1 {
 		bottom: 20%;
@@ -709,7 +707,7 @@ float: left;
 		position: fixed;
 		background-color: rgba(235, 114, 96, 0.5);
 	}
-}
+
 
 // removes glow around input boxes. Will not affect UX
 :focus {
@@ -955,6 +953,7 @@ float: left;
 		position: fixed;
 		bottom: 0;
 		background-color: rgba(0, 0, 0, .4);
+		z-index: 1000;
 	}
 	.footer-text {
 		font-size: 0.9em;

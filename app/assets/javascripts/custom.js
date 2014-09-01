@@ -247,18 +247,25 @@ $(function() {
 //animations on startup -------------->
 $(document).ready(function() {
 	// ribbons flow over and up side bar
-	if(windowWidth > 768){
+	if(windowWidth > 640){
 		$('.ribbon1').animate({'width' : '80%'}, 2000, 'linear');
 		$('.ribbon2').animate({'width' : '80%'}, 1500, 'linear');
 		$('.ribbon3').animate({'width' : '80%'}, 1000, 'linear');
 		$('.footer-text').delay(1000).fadeIn(2000);
-		$('.ribbon1-right').delay(2000).animate({'width' : '100%'}, 500);
-		$('.ribbon2-right').delay(1500).animate({'width' : '100%'}, 500);
-		$('.ribbon3-right').delay(1000).animate({'width' : '100%'}, 500);
+		$('.ribbon1-right').delay(2200).animate({'width' : '100%'}, 500);
+		$('.ribbon2-right').delay(1700).animate({'width' : '100%'}, 500);
+		$('.ribbon3-right').delay(1200).animate({'width' : '100%'}, 500);
 		$('.background-cover').animate({'width' : '100%'}, 2000);
 	}
 	else {
 		$('.footer-text').delay(500).fadeIn(1000);
+		$('.ribbon1').animate({'width' : '80%'}, 1500, 'linear');
+		$('.ribbon2').animate({'width' : '80%'}, 1000, 'linear');
+		$('.ribbon3').animate({'width' : '80%'}, 500, 'linear');
+		$('.ribbon1-right').delay(1700).animate({'width' : '100%'}, 500);
+		$('.ribbon2-right').delay(1200).animate({'width' : '100%'}, 500);
+		$('.ribbon3-right').delay(700).animate({'width' : '100%'}, 500);
+		$('.background-cover').animate({'width' : '100%'}, 2000);
 	}
 });
 
