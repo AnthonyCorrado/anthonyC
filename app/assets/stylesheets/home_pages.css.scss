@@ -380,11 +380,19 @@ float: left;
 	background: url(MQSprite.png) -1670px -890px;
 	background-size: 317%;
 }
-.my-resume {
+.my-resume-top {
 	margin: 0 auto;
 	width: 90%;
-	height: 1200px;
-	background: url(resumeAugust2014.png);
+	height: 37%;
+	background: url(resumeAugust2014Top.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.my-resume-bottom {
+	margin: 0 auto;
+	width: 90%;
+	height: 40%;
+	background: url(resumeAugust2014Bottom.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
