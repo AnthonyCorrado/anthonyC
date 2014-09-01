@@ -94,6 +94,7 @@ h6 {
 	line-height: 2;
 	color: #bbb;
 	display: none;
+
 }
 // .made-by-right {
 // 	position: absolute;
@@ -786,7 +787,7 @@ float: left;
 		margin: 0 auto;
 		margin-top: 10%;
 		width: 100%;
-		background: url(resumeAugust2014copy.png);
+		background: url(resumeAugust2014.jpg);
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}
@@ -957,12 +958,11 @@ float: left;
 		position: fixed;
 		bottom: 0;
 		background-color: rgba(0, 0, 0, .4);
-		z-index: 1000;
 	}
 	.footer-text {
 		font-size: 0.9em;
-		text-align: center;
-		padding-left: 5%;
+		text-align: left;
+		padding-left: 10%;
 		color: #ddd;
 	}
 	.spacebar {
@@ -1049,5 +1049,6 @@ float: left;
 	}
 	.footer-text {
 		font-size: 0.8em;
+
 	}
 }
