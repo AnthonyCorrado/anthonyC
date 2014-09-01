@@ -136,7 +136,7 @@ ul a {
 	display: inline;
 }
 .right-box {
-	position: absolute;
+	position: fixed;
 	margin-left: 80%;
 	margin-top: -10%;
 	width: 20%;
@@ -168,7 +168,7 @@ ul a {
 	padding: 0 1.5%;
 	width: 20%;
 	position: relative;
-	background-color: rgba(0, 0, 0, .4);
+	background-color: rgba(0, 0, 0, 0.5);
 	border: 1px solid $mintgreen;
 	outline: 1px solid transparent;
 }
@@ -217,12 +217,11 @@ ul a {
 	margin-left: 7%;
 	margin-top: 2%;
 	width: 90%;
-	background-color: $darkteal + #444444;
-	border-left: 3px solid black;
-	border-right: 3px solid black;
+	background-color: $darkblue;
+	border: 2px solid $darkblue;
 }
 .proj-box {
-	background-color: $darkteal;
+	background-color: rgba(41, 171, 164, 0.5);
 	margin: 2% 9% 2% 5%;
 	width: 40%;
 	display: inline-block;
@@ -232,12 +231,12 @@ ul a {
  	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
 }
 .proj-box:hover {
-	border-right: 1px solid rgba(254,18,60, 1);
-	border-left: 1px solid rgba(254,18,60, 1);
+	border-right: 1px solid $darkpink;
+	border-left: 1px solid $darkpink;
 	border-radius: 5px;
 }
 .proj-right {
-	background-color: $darkteal;
+	background-color: rgba(41, 171, 164, 0.5);
 	margin: 2% 0;
 	width: 40%;
 	display: inline-block;
@@ -251,7 +250,7 @@ ul a {
 	border-radius: 5px;
 }
 .proj-creative-box {
-	background-color: $darkteal;
+	background-color: rgba(41, 171, 164, 0.5);
 	margin: 2% 9% 2% 5%;
 	width: 40%;
 	display: inline-block;
@@ -261,7 +260,7 @@ ul a {
  	box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
 }
 .proj-creative-box-right {
-	background-color: $darkteal;
+	background-color: rgba(41, 171, 164, 0.5);
 	margin: 2% 0;
 	width: 40%;
 	display: inline-block;
@@ -414,8 +413,8 @@ float: left;
 }
 .my-resume-top {
 	margin: 0 auto;
-	width: 90%;
-	height: 1200px;
+	margin-top: 10%;
+	width: 96%;
 	background: url(resumeAugust2014.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -430,9 +429,8 @@ float: left;
 }
 
 .reveal-modal {
-	height: 450px;
 	overflow: auto;
-	background-color: $grayblue - #444444;	
+	background-color: $darkblue;	
 	border: 3px solid $mintgreen;
 	outline: 1px solid transparent;
 }
@@ -664,13 +662,13 @@ float: left;
 		width: 0%;
 		height: 7.5%;
 		background-color: rgba(41, 171, 164, 0.5);
-		position: absolute;
+		position: fixed;
 		overflow: auto;
 		z-index: -100;
 	}
 	//rgba(58, 154, 217, 0.5)
 	.ribbon1-right {
-		position: absolute;
+		position: fixed;
 		bottom: 20.5%;
 		bottom: 20.5%;
 		bottom: 20.5%;
@@ -683,12 +681,12 @@ float: left;
 		width: 0%;
 		height: 7.5%;
 		background-color: rgba(223, 224, 214, 0.5);
-		position: absolute;
+		position: fixed;
 		overflow: auto;
 		z-index: -100;
 	}
 	.ribbon2-right {
-		position: absolute;
+		position: fixed;
 		bottom: 12%;
 		width: 0%;
 		height: 7.5%;
@@ -700,7 +698,7 @@ float: left;
 		width: 0%;
 		height: 7.5%;
 		background-color: rgba(235, 114, 96, 0.5);
-		position: absolute;
+		position: fixed;
 		overflow: auto;
 		z-index: -100;
 	}
@@ -708,7 +706,7 @@ float: left;
 		bottom: 3.5%;
 		width: 0%;
 		height: 7.5%;
-		position: absolute;
+		position: fixed;
 		background-color: rgba(235, 114, 96, 0.5);
 	}
 }
@@ -751,6 +749,7 @@ float: left;
 		margin-top: 4%;
 	}
 }
+// mobile styling begins here ----------------------------------------->
 @media (min-width: 0px) and (max-width: 640px) {
 	.top-bar-section ul li > a {
 		font-size: 0.7em;
@@ -780,8 +779,8 @@ float: left;
 	}
 	.my-resume-top {
 		margin: 0 auto;
-		width: 90%;
-		height: 90%;
+		margin-top: 10%;
+		width: 100%;
 		background: url(resumeAugust2014copy.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -789,6 +788,13 @@ float: left;
 	.small-menu-text {
 		color: #ddd;
 		display: inline;
+	}
+	#user_name, #user_email {
+		height: 2em;
+		width: 100%;
+	}
+	#user_message {
+		width: 100%;
 	}
 	.contact-modal {
 		margin-left: 10%;
@@ -803,21 +809,21 @@ float: left;
 		display: none;
 	}
 	.contact-form-filler {
-		width: 200%;
-		margin-left: 25%;
-		margin-top: 30%;
-		padding-left: 35%;
+		width: 100%;
+		margin-top: 10%;
 	}
 	#user_message {
-		width: 80%;
+		width: 100%;
 	}
 	.contact-submit {
 		width: 30%;
-		margin-left: 50%;
+		margin-left: 70%;
 	}
 	.small-contact-message {
 		width: 100%;
+		font-size: 0.7em;
 		text-align: center;
+		padding-top: 3%;
 		background-color: rgba(0, 0, 0, .5);
 		-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
 	 	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
@@ -834,8 +840,11 @@ float: left;
 	.reveal-modal {
 		margin: 5%;
 		width: 90%;
-		min-height: 400px;
 		padding: 0;
+		background-color: white;
+	}
+	.reveal-modal2 {
+		background-color: $darkblue;
 	}
 	.mail-animate {
 		display: none;

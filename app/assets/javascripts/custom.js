@@ -8,8 +8,8 @@ $(document).ready(function() {
 		$('#last-name').delay(1100).fadeIn(3000);
 	}
 	else {
-		$('#first-initial').delay(700).animate({'color' : '#DDD'}, 1000);
-		$('#last-initial').delay(700).animate({'color' : '#DDD'}, 1000);
+		$('#first-initial').delay(500).animate({'color' : '#DDD'}, 1000);
+		$('#last-initial').delay(500).animate({'color' : '#DDD'}, 1000);
 		$('#first-name').fadeIn(3000);
 		$('#last-name').fadeIn(3000);
 	}
@@ -55,8 +55,8 @@ $('.med-text').click(function() {
 
 $('.contact-animate').click(function(){
 	if ($(".arrow").css("display") == "none" ){
-				$('.small-mail-animate').delay(1500).fadeIn('slow');
-				$('.small-mail-animate').animate({'margin-top' : '100%'}, 2000);
+		$('.small-mail-animate').delay(1500).fadeIn('slow');
+		$('.small-mail-animate').animate({'margin-top' : '100%'}, 2000);
 	}
 	else {
 		$('.inner-form').delay(500).animate({'margin-left' : '55%'}, 1000);
@@ -261,3 +261,11 @@ $(document).ready(function() {
 		$('.footer-text').delay(500).fadeIn(1000);
 	}
 });
+
+// resume modal sizing ------------->
+if(windowWidth > 640){
+	$('.my-resume-top').css({'height' : windowWidth - 200});
+}
+else {
+	$('.my-resume-top').css({'height' : windowWidth + 200});
+}
