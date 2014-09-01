@@ -16,12 +16,17 @@ $(document).ready(function() {
 });
 //-----
 var toggleState = 0;
+var summaryToggle = 0;
 
 $('.about-me').click(function(){
   $('.main-content-sub').slideToggle('slow');
+  $('.footer-container').fadeOut('slow');
+  summaryToggle++;
 });
 $('.main-content').click(function(){
   $('.main-content-sub').slideToggle('slow');
+  $('.footer-container').fadeOut('slow');
+  summaryToggle++;
 });
 
 $('.portfolio').click(function(){
@@ -110,6 +115,10 @@ $('.skills').click(function(){
 		$('.projects-content-sub').slideToggle(2000);
 		$(".made-by").slideToggle(800);
 		toggleState++;
+	}
+	if(summaryToggle % 2 !==0){
+		$('.main-content-sub').slideToggle('slow');
+		summaryToggle++;
 	}
 });
 
