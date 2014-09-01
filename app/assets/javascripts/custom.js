@@ -142,16 +142,8 @@ $('#small-ticker-title2').click(function() {
 	$('#ticker-title1').css({'color' : '#555555'});
 	$('.software-skills').css({'display' : 'block'});
 	$('.skills-body-top').css({'display' : 'none'});
-	$('.software-skills').animate({'margin-left' : '-100%'}, 60000, 'linear');
+	$('.software-skills').animate({'margin-left' : '-100%'}, 44000, 'linear');
 });
-
-// stops skill ticker when user manually scrolls
-// $('.skills-body-top, .software-skills').bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
-// 	$(this).stop();
-// });
-// $('.skills-body-top, .software-skills').animate({ scrollTop: $('html,body').position().top }, 'slow', function(){
-//   $('.skills-body-top, .software-skills').unbind("touchsmart touchmove onscroll mousedown DOMMouseScroll mousewheel keyup");
-// });
 
 $('.skills-body-top, .software-skills').bind('scroll touchsmart touchmove onscroll mousedown wheel DOMMouseScroll mousewheel keyup', function(e){
  if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel" || e.type == "touchmove"){
