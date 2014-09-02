@@ -818,7 +818,7 @@ float: left;
 		margin-top: 5%;
 	}
 	.photography-loading {
-		background: url(loading.gif) 50% 50% no-repeat;
+		background: url(loading.gif) 50% 80% no-repeat;
 		width: 100%;
 		height: 100%;
 		color: #aaa;
@@ -828,6 +828,7 @@ float: left;
 	.photobox {
 		width: 90%;
 		height: 55%;
+		margin-left: 4.5%;
 	}
 	.wide-photobox {
 		display: none;
