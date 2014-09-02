@@ -721,9 +721,7 @@ float: left;
   outline-color: transparent;
   outline-style: none;
 }
-@media (min-width: 1021px) {
 
-}
 @media (min-width: 0px) and (max-width: 1025px) {
 	body {
 	}
@@ -762,6 +760,11 @@ float: left;
 		font-size: 1.7em;
 	}
 	.migrane {
+	}
+}
+@media (min-width: 871px) and (max-width: 1025px) {
+	.footer-container {
+		margin-bottom: 2%;
 	}
 }
 @media (min-width: 0px) and (max-width: 870px) {
