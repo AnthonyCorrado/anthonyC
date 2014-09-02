@@ -108,7 +108,7 @@ $('#activated3').click(function() {
 $('.skills-click').click(function(){
 	$('.footer-container').slideToggle('fast');
 	$('.headache').delay(4000).fadeIn(2000);
-	$('.headache').delay(15000).fadeOut(2000);
+	$('.headache').delay(20000).fadeOut(2000);
 	if(windowWidth > 768){
 		$('.skills-body-top').animate({'margin-left' : '-85%'}, 20000, 'linear');
 	}
@@ -129,7 +129,7 @@ $('.skills-click').click(function(){
 $('#ticker-title1').click(function() {
 	$(this).css({'color' : '#FFFF00'});
 	$('#ticker-title2').css({'color' : '#555555'});
-	$('.skills-body-top').css({'display' : 'inline'});
+	$('.skills-body-top').css({'display' : 'block'});
 	$('#small-ticker-title2').css({'color' : '#555555'});
 	$('.software-skills').css({'display' : 'none'});
 });

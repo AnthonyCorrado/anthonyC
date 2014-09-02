@@ -452,7 +452,7 @@ float: left;
 .red1:hover, .red2:hover, .red3:hover, .red4:hover, .red5:hover  
 .red6:hover, .red7:hover, .red8:hover, .red9:hover, .red10:hover
 .red11:hover, .red12:hover, .red13:hover, .red14:hover {
-	color: rgba(235, 114, 96, 0.9);
+	color: #8F5B5C;
 }
 
 .form-container {
@@ -471,6 +471,7 @@ float: left;
 	background-color: $darkblue;
 	padding: 3% 3% 10% 3%;
 	border: 2px solid rgba(0, 0, 0, .5);
+	outline: 1px solid transparent;
 }
 .contact-message {
 	margin-top: 0 auto;
@@ -478,7 +479,6 @@ float: left;
 	width: 100%;
 	float: left;
 	text-align: center;
-
 	background-color: $darkblue;
 	-webkit-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
  	-moz-box-shadow: 0px 13px 6px 0px rgba(0,0,0,0.75);
@@ -731,6 +731,9 @@ float: left;
 @media (min-width: 0px) and (max-width: 1025px) {
 	body {
 	}
+	.photo-grid {
+		overflow: visible;
+	}
 	#title-text {
 		line-height: 1.5;
 		font-size: 1.5em;
@@ -738,7 +741,7 @@ float: left;
 	.top-bar-section ul li > a {
 		font-size: 1em;
 	}
-	  #skills-heading {
+	 #skills-heading {
 		font-size: 1.2em;
 		margin-left: 2%;
 		font-family: 'Geo', sans-serif;
@@ -753,7 +756,11 @@ float: left;
 	.software-skills-bar {
 		width: 850%;
 	}
-		.stock, .ticker, #ticker-repeat	{
+	.software-skills {
+		width: 100%;
+		margin-right: 50%;
+	}
+	.stock, .ticker, #ticker-repeat	{
 		font-family: 'Geo', sans-serif;
 	}
 	.stock, #ticker-repeat {
@@ -767,7 +774,17 @@ float: left;
 	}
 	.migrane {
 	}
+	//--------------------------------------------------------------------
 }
+@media (min-width: 640px) and (max-width: 1023px) {
+	  #skills-heading {
+		font-size: 1em;
+		margin-left: 2%;
+		font-family: 'Geo', sans-serif;
+		line-height: 1.5;
+  }
+}
+
 @media (min-width: 871px) and (max-width: 1025px) {
 	.footer-container {
 		margin-bottom: 2%;
@@ -838,7 +855,65 @@ float: left;
 	.wide-photobox {
 		display: none;
 	}
-
+	.headache {
+		font-size: 1.5em;
+		margin-top: -8%;
+	}
+	.migrane {
+		font-size: 1em;
+	}
+	.footer-container {
+		height: 10.5%;
+		bottom: 1.5%;
+	}
+  #skills-heading {
+		font-size: 1em;
+		margin-left: 2%;
+		font-family: 'Geo', sans-serif;
+		line-height: 1.5;
+  }
+  #ticker-title2 {
+  	display: none;
+  }
+  #small-ticker-title2 {
+  	display: inline;
+  	color: #999999;
+  }
+	#skill-select {
+		font-size: 0.7em;
+	}
+	.skills-bar {
+		width: 800%;
+		margin-left: 140%;
+	}
+	.skills-body-top {
+		margin-right: 10%;
+		padding-top: 7px;
+		width: 100%;
+		height: 50px;	
+		overflow: hidden;
+	}
+	.software-skills-bar {
+		width: 1100%;
+		margin-right: 50%;
+	}
+	.software-skills {
+		margin-left: 0%;
+		padding-top: 7px;
+		width: 90%;
+		overflow: hidden;
+		display: block;
+		height: 50px;
+	}
+	.stock, .ticker, #ticker-repeat	{
+		font-family: 'Geo', sans-serif;
+	}
+	.stock, #ticker-repeat {
+		font-size: 1.7em;
+	}
+	.ticker {
+		font-size: 1em;
+	}	
 }
 // mobile styling begins here ----------------------------------------->
 @media (min-width: 0px) and (max-width: 640px) {
@@ -908,6 +983,7 @@ float: left;
 	.contact-form-filler {
 		width: 100%;
 		margin-top: 10%;
+		outline: 1px solid transparent;
 	}
 	.contact-submit {
 		width: 30%;
@@ -1061,8 +1137,8 @@ float: left;
 	}
 	// mobile skills reveal section ---->
 	.footer-container {
-		height: 12%;
-		bottom: 1.5%;
+		height: 15%;
+		bottom: 3.5%;
 	}
   #skills-heading {
 		font-size: 1em;
@@ -1084,9 +1160,11 @@ float: left;
 		width: 1900%;
 	}
 	.skills-body-top {
-		margin-right: 10%;
 		width: 100%;
 		height: 50px;	
+		padding: 7px 0;
+		margin-right: 10%;
+		font-size: 0.8em;
 		overflow: hidden;
 	}
 	.software-skills-bar {
@@ -1095,9 +1173,11 @@ float: left;
 	.software-skills {
 		margin-left: 0%;
 		width: 90%;
+		height: 50px;
+		font-size: 0.8em;
+		padding: 7px 0;
 		overflow: hidden;
 		display: block;
-		height: 50px;
 	}
 	.stock, .ticker, #ticker-repeat	{
 		font-family: 'Geo', sans-serif;
@@ -1121,12 +1201,6 @@ float: left;
 	.migrane {
 		font-size: 1em;
 		margin-left: 5%;
-	}
-	.skills-body-top {
-		font-size: 0.8em;
-	}
-	.software-skills {
-		font-size: 0.8em;
 	}
 }
 @media (min-width: 0px) and (max-width: 340px) {
