@@ -346,6 +346,7 @@ li .nav-styling a:hover {
 	height: 580px;
 	margin-left: 2.5%;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 .photobox {
 	width: 45%;
@@ -434,6 +435,7 @@ float: left;
 	background-color: $darkblue;	
 	border: 3px solid $mintgreen;
 	outline: 1px solid transparent;
+	-webkit-overflow-scrolling: touch;
 }
 .contact-modal {
 	overflow: auto;
@@ -445,6 +447,7 @@ float: left;
 	border: 2px solid $mintgreen;
 	outline: 1px solid transparent;
 	border-radius: 0;
+	-webkit-overflow-scrolling: touch;
 }
 .red1:hover, .red2:hover, .red3:hover, .red4:hover, .red5:hover  
 .red6:hover, .red7:hover, .red8:hover, .red9:hover, .red10:hover
@@ -611,10 +614,12 @@ float: left;
 .skills-container {
 	width: 100%;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 .skills-container-software {
 	width: 100%;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 .skills-bar {
 	width: 580%;
