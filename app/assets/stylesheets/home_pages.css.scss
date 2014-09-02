@@ -40,6 +40,7 @@ nav.top-bar {
 body{
 	background-color: $darkblue;
 	color: #ddd;
+	height: 100%;
 }
 // .background-cover {
 // 	position: absolute;
@@ -723,7 +724,7 @@ float: left;
 @media (min-width: 1021px) {
 
 }
-@media (min-width: 0px) and (max-width: 1020px) {
+@media (min-width: 0px) and (max-width: 1025px) {
 	body {
 	}
 	#title-text {
@@ -732,6 +733,35 @@ float: left;
 	}
 	.top-bar-section ul li > a {
 		font-size: 1em;
+	}
+	  #skills-heading {
+		font-size: 1.2em;
+		margin-left: 2%;
+		font-family: 'Geo', sans-serif;
+		line-height: 1.5;
+  }
+  #ticker-title2 {
+  	font-size: 1em;
+  }
+  #skill-select {
+		font-size: 0.9em;
+	}
+	.software-skills-bar {
+		width: 850%;
+	}
+		.stock, .ticker, #ticker-repeat	{
+		font-family: 'Geo', sans-serif;
+	}
+	.stock, #ticker-repeat {
+		font-size: 1.5em;
+	}
+	.ticker {
+		font-size: 1em;
+	}
+	.headache {
+		font-size: 1.7em;
+	}
+	.migrane {
 	}
 }
 @media (min-width: 0px) and (max-width: 870px) {
