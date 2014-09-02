@@ -44,6 +44,10 @@ body{
 	color: #ddd;
 	height: 100%;
 }
+.about-me-style {
+	padding: 1% 3%;
+	font-size: 1.1em;
+}
 // .background-cover {
 // 	position: absolute;
 // 	width: 1%;
@@ -163,6 +167,7 @@ ul a {
 	border: 1px solid $mintgreen;
 	outline: 1px solid transparent;
 }
+
 .main-content-sub {
 	display: none;
 }
@@ -923,6 +928,7 @@ float: left;
 		font-size: 1em;
 	}	
 }
+
 // mobile styling begins here ----------------------------------------->
 @media (min-width: 0px) and (max-width: 640px) {
 	.top-bar-section ul li > a {
