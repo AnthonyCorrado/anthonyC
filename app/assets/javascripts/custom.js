@@ -101,7 +101,7 @@ $('#activated3').click(function() {
 });
 
 // footer/skills animations
-$('.skills').click(function(){
+$('.skills-click').click(function(){
 	$('.footer-container').slideToggle('fast');
 	$('.headache').delay(4000).fadeIn(2000);
 	$('.headache').delay(15000).fadeOut(2000);

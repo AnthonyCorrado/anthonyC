@@ -188,8 +188,6 @@ ul a {
 	border: 1px solid $mintgreen;
 	outline: 1px solid transparent;
 }
-.resume-click {
-}
 #projects-tabs {
 	display: inline;
 }
@@ -329,6 +327,7 @@ p {
 	font-size: 0.8em;
 	line-height: 1;
 }
+
 li .nav-styling a:hover {
 	background-color: black;
 }
@@ -338,7 +337,6 @@ li .nav-styling a:hover {
 .top-bar-section ul li:hover:not(.has-form) > a {
 	color: $mintgreen;
 }
-
 // photography image display section --------->
 
 .photo-grid {
@@ -753,6 +751,15 @@ float: left;
 	}
 	.top-bar-section ul li > a {
 		margin-top: 4%;
+	}
+	.resume-click {
+		padding-right: 70%;
+	}
+	.skills-click {
+		padding-right: 30%;
+	}
+	.contact-click {
+		padding-right: 50%;
 	}
 }
 // mobile styling begins here ----------------------------------------->

@@ -119,22 +119,22 @@
 
 		<!-- smaller devices no nav, div title selectors -->
 		<div class="hide-when-large">
-			<div class="resume-content">
+			<div class="resume-content resume-click">
 				<h1 class="heading-text small-resume-text">
-					<a href="#" data-reveal-id="myModal"><span id="small-menu-text">Resume</span></a>
+					<a href="#" data-reveal-id="myModal" class="resume-click"><span id="small-menu-text">Resume</span></a>
 				</h1>
 				<div id="myModal" class="reveal-modal medium" data-reveal>
 					<div class="my-resume"></div>
 				</div>
 			</div>
 
-			<div class="resume-content">
+			<div class="resume-content skills-click">
 				<h1 class="heading-text nav-styling skills"><a>Skills</a></h1>
 			</div>
 
 			<div class="resume-content">
 				<h1 class="heading-text nav-styling nav-styling contact-animate">
-					<a href="#" data-reveal-id="contactModal">Contact Me</a>
+					<a href="#" data-reveal-id="contactModal" class= "contact-click">Contact Me</a>
 				</h1>
 				<div id="contactModal" class="reveal-modal medium contact-modal" data-reveal>
 					<%= render template: "users/new" %>
