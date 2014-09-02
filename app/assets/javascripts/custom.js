@@ -30,12 +30,16 @@ $('.main-content').click(function(){
 });
 
 $('.portfolio').click(function(){
-	if(windowWidth > 768){
-		$(".made-by").slideToggle(800);
+	$('.footer-container').fadeOut(1000);
+	$(".made-by").slideToggle(800);
+	if(windowWidth > 641){
 		$('.projects-content').animate({'width': '90%'});
 		$('.projects-content-sub').delay(400).slideToggle(1000);
 		// closes 'skills' bar when portfolio opens
 		$('.footer-container').css({'display' : 'none'});
+	}
+	else {
+		$('.projects-content-sub').delay(400).slideToggle(1000);
 	}
 	toggleState++;
 });
@@ -43,7 +47,7 @@ $('.portfolio').click(function(){
 $('.portfolio-click').click(function(){
 	$('.footer-container').fadeOut(1000);
 	$(".made-by").slideToggle(800);
-	if(windowWidth > 768){
+	if(windowWidth > 641){
 		$('.projects-content').animate({'width': '90%'});
 		$('.projects-content-sub').delay(400).slideToggle(1000);
 		// closes 'skills' bar when portfolio opens
