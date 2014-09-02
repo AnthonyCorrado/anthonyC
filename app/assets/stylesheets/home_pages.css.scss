@@ -197,23 +197,14 @@ ul a {
 	color: #ddd;
 }
 #small-activated1 {
-		display: none;
-	}
-// #activated1:hover {
-// 	color: $mintgreen;
-// }
+	display: none;
+}
 #activated2 {
 	color: #555555;
 }
-// #activated2:hover {
-// 	color: $mintgreen;
-// }
 #activated3 {
 	color: #555555;
 }
-// #activated3:hover {
-// 	color: $mintgreen;
-// }
 .project-grid {
 	margin-left: 7%;
 	margin-top: 2%;
@@ -747,6 +738,21 @@ float: left;
 		font-family: 'Geo', sans-serif;
 		line-height: 1.5;
   }
+  .projects-content-sub {
+  	padding-top: 5%;
+  }
+  #small-activated1 {
+  	padding-top: 9px;
+  }
+  #activated1 {
+  	padding-top: 9px;
+  }
+ 	#activated2 {
+  	padding-top: 9px;
+  }
+  #activated3 {
+  	padding-top: 9px;
+  }
   #ticker-title2 {
   	font-size: 1em;
   }
@@ -774,8 +780,8 @@ float: left;
 	}
 	.migrane {
 	}
-	//--------------------------------------------------------------------
 }
+	//--------------------------------------------------------------------
 @media (min-width: 640px) and (max-width: 1023px) {
 	  #skills-heading {
 		font-size: 1em;
