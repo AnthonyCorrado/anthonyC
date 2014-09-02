@@ -46,7 +46,7 @@ $('.portfolio').click(function(){
 
 $('.portfolio-click').click(function(){
 	$('.footer-container').fadeOut(1000);
-	$(".made-by").slideToggle(800);
+	$(".made-by").slideToggle(800);	
 	if(windowWidth > 641){
 		$('.projects-content').animate({'width': '90%'});
 		$('.projects-content-sub').delay(400).slideToggle(1000);
@@ -98,7 +98,7 @@ $('#activated2').click(function() {
 $('#activated3').click(function() {
 	$('.photography-loading').css({'display' : 'block'});
 	$(this).css({'color' : '#ddd'});
-	$('.photography-loading').delay(3000).fadeOut(200);
+	$('.photography-loading').delay(4000).animate({'opacity' : '0'});
 	$('#activated1').css({'color' : '#555555'});
 	$('#activated2').css({'color' : '#555555'});
 	$('#small-activated1').css({'color' : '#555555'});
