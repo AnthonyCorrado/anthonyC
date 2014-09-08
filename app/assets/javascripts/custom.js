@@ -35,7 +35,7 @@ $(document).ready(function() {
 });
 //-----
 var toggleState = 0;
-var summaryToggle = 0;
+var summaryToggle = 1;
 
 $('.about-me').click(function(){
   $('.main-content-sub').slideToggle('slow');
