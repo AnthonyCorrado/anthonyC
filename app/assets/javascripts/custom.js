@@ -1,4 +1,6 @@
 var windowWidth = $(window).width();
+var windowHeigth = $(window).height();
+console.log(windowHeigth);
 // animates my initials until full name is displayed
 $(document).ready(function() {
 	if(windowWidth > 768){
@@ -12,6 +14,12 @@ $(document).ready(function() {
 		$('#last-initial').delay(500).animate({'color' : '#DDD'}, 1000);
 		$('#first-name').fadeIn(3000);
 		$('#last-name').fadeIn(3000);
+	}
+	if(windowHeigth < 460){
+		$('nav.top-bar').css({'height' : '15%'});
+		$('.about-me-text, .portfolio-text').css({'font-size' : '1em'});
+		$('.heading-text').css({'font-size' : '0.8em'});
+		$('#title-text').css({'font-size' : '1.5em'});
 	}
 });
 //-----
