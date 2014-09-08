@@ -16,7 +16,9 @@ $(document).ready(function() {
 		$('#last-name').fadeIn(3000);
 	}
 	if(windowHeigth < 460){
+		summaryToggle++;
 		$('nav.top-bar').css({'height' : '15%'});
+		$('.main-content-sub').css({'display' : 'none'});
 		$('.about-me-text, .portfolio-text').css({'font-size' : '1em'});
 		$('.heading-text').css({'font-size' : '0.8em'});
 		$('#title-text').css({'font-size' : '1.5em'});
