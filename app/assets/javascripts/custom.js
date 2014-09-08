@@ -20,6 +20,11 @@ $(document).ready(function() {
 		$('.about-me-text, .portfolio-text').css({'font-size' : '1em'});
 		$('.heading-text').css({'font-size' : '0.8em'});
 		$('#title-text').css({'font-size' : '1.5em'});
+		$('.footer-container').css({'height' : '20%'});
+		$('.skills-click').click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+		});
 	}
 });
 //-----
@@ -54,7 +59,7 @@ $('.portfolio').click(function(){
 
 $('.portfolio-click').click(function(){
 	$('.footer-container').fadeOut(1000);
-	$(".made-by").slideToggle(800);	
+	$(".made-by").slideToggle(800);
 	if(windowWidth > 641){
 		$('.projects-content').animate({'width': '90%'});
 		$('.projects-content-sub').delay(400).slideToggle(1000);
