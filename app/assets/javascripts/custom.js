@@ -21,8 +21,14 @@ $(document).ready(function() {
 		$('.heading-text').css({'font-size' : '0.8em'});
 		$('#title-text').css({'font-size' : '1.5em'});
 		$('.footer-container').css({'height' : '20%'});
+		$('.close-skills').css({'display' : 'inline'});
 		$('.skills-click').click(function() {
       $("html, body").animate({ scrollTop: 0 }, "slow");
+      $(".headache").css({ 'background-color': 'rgba(0, 0, 0, 0.8'});
+      $(".headache").css({ 'margin-top': '-7%'});
+      $('.headache').click(function() {
+        $('.footer-container').fadeOut('fast');
+      });
       return false;
 		});
 	}
@@ -121,7 +127,8 @@ $('#activated3').click(function() {
 $('.skills-click').click(function(){
 	$('.footer-container').slideToggle('fast');
 	$('.headache').delay(4000).fadeIn(2000);
-	$('.headache').delay(20000).fadeOut(2000);
+	if(windowHeigth > 460)
+		$('.headache').delay(20000).fadeOut(2000);
 	if(windowWidth > 768){
 		$('.skills-body-top').animate({'margin-left' : '-85%'}, 20000, 'linear');
 	}
@@ -286,7 +293,6 @@ $(document).ready(function() {
 		$('.background-cover').animate({'width' : '100%'}, 2000);
 	}
 });
-
 // resume modal sizing ------------->
 if(windowWidth > 640){
 	$('.my-resume-top').css({'height' : windowWidth - 200});
