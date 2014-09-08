@@ -21,13 +21,6 @@ $darkpink: #EB7260;
 	display: none;
 }
 
-// included to force iOS devices to engage GPU for animations
-#last-initial, #last-name, #first-initial, #first-name, .main-content, .main-content-sub, .footer-container, .main-content, .main-content-sub, .made-by, .projects-content, .projects-content-sub, .small-mail-animate, .mail-animate, .arrow, #activated, #activated1, #activated2, #activated3, #small-activated1, .photography-loading, .headache, .skills-body-top, #ticker, #ticker-title1, #ticker-title2, #small-ticker-title2, .software-skills, .software-skills-bar, .skills-body-top, #skill-select, .portfolio-text, .about-me-text, .ribbon, .ribbon1, .ribbon2, .ribbon3, .ribbon1-right, .ribbon2-right, .ribbon3-right, .background-cover, .my-resume, .my-resume-top {
-	transform: translate3d(0,0,0);
-	-webkit-transform: translate3d(0,0,0);
-	-webkit-transform: translateZ(0);
-}
-
 nav.top-bar {
 	background-color: $mintgreen;
 	text-align:center;
@@ -1229,5 +1222,14 @@ float: left;
 	.footer-text {
 		font-size: 0.8em;
 
+	}
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+	// included to force iOS devices to engage GPU for animations
+	#last-initial, #last-name, #first-initial, #first-name, .main-content, .main-content-sub, .footer-container, .main-content, .main-content-sub, .made-by, .projects-content, .projects-content-sub, .small-mail-animate, .mail-animate, .arrow, #activated, #activated1, #activated2, #activated3, #small-activated1, .photography-loading, .headache, .skills-body-top, #ticker, #ticker-title1, #ticker-title2, #small-ticker-title2, .software-skills, .software-skills-bar, .skills-body-top, #skill-select, .portfolio-text, .about-me-text, .ribbon, .ribbon1, .ribbon2, .ribbon3, .ribbon1-right, .ribbon2-right, .ribbon3-right, .background-cover, .my-resume, .my-resume-top {
+		transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-webkit-transform: translateZ(0);
+		outline: 1px solid transparent;
 	}
 }
