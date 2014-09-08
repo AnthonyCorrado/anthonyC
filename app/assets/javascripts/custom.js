@@ -160,7 +160,7 @@ function blinker() {
     $('#skill-select').fadeOut(500);
     $('#skill-select').fadeIn(500);
 }
-setInterval(blinker, 2700);
+setInterval(blinker, 1500);
 
 //-----
 $('.portfolio').hover(

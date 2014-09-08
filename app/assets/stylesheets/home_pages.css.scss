@@ -580,7 +580,7 @@ float: left;
 	color: #fff;
 }
 #skills-heading {
-	font-size: 1em;
+	font-size: 1.3em;
 	width: 100%;
 	margin-left: 2%;
 	position: relative;
@@ -592,18 +592,22 @@ float: left;
 #ticker-title1 {
 	color: #FFFF00;
 	outline: none;
+	font-family: 'Geo', sans-serif;
 }
 #ticker-title2 {
-	color: #555555;
+	color: #aaaaaa;
 	outline: none;
+	font-family: 'Geo', sans-serif;
 }
 #small-ticker-title2 {
 	display: none;
+	color: #bbbbbb;
 }
 #skill-select {
 	font-size: 0.7em;
 	color: $mintgreen;
 	outline: none;
+	font-family: 'Geo', sans-serif;
 }
 .skills-container {
 	width: 100%;
