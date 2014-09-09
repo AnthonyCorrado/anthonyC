@@ -34,6 +34,9 @@ $(document).ready(function() {
       return false;
 		});
 	}
+	if(windowWidth < 550){
+		$('.main-content-sub').css({'display' : 'none'});
+	}
 });
 //-----
 var toggleState = 0;
@@ -62,6 +65,7 @@ $('.portfolio').click(function(){
 	else {
 		$('.projects-content-sub').delay(400).slideToggle(1000);
 	}
+	hideSelect();
 	toggleState++;
 });
 
@@ -76,12 +80,7 @@ $('.portfolio-click').click(function(){
 	else {
 		$('.projects-content-sub').delay(400).slideToggle(1000);
 	}
-	if(toggleState % 2 !== 0){
-		$('.hidden-select').fadeOut(1000);
-	}
-	else {
-		$('.hidden-select').fadeIn(2000);
-	}
+	hideSelect();
 	toggleState++;
 });
 
@@ -104,6 +103,14 @@ $('.contact-animate').click(function(){
 });
 
 
+function hideSelect() {
+	if(toggleState % 2 !== 0){
+		$('.hidden-select').fadeOut(1000);
+	}
+	else {
+		$('.hidden-select').fadeIn(2000);
+	}
+}
 
 // portfolio clickable tabs coloring
 $('#activated1').click(function() {
@@ -135,6 +142,7 @@ $('#activated3').click(function() {
 $('.skills-click').click(function(){
 	$('.footer-container').slideToggle('fast');
 	$('.headache').delay(4000).fadeIn(2000);
+	$('.hidden-select').fadeOut(1000);
 	if(windowHeigth > 460)
 		$('.headache').delay(20000).fadeOut(2000);
 	if(windowWidth > 768){
