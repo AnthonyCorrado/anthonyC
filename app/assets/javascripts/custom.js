@@ -76,6 +76,12 @@ $('.portfolio-click').click(function(){
 	else {
 		$('.projects-content-sub').delay(400).slideToggle(1000);
 	}
+	if(toggleState % 2 !== 0){
+		$('.hidden-select').fadeOut(1000);
+	}
+	else {
+		$('.hidden-select').fadeIn(2000);
+	}
 	toggleState++;
 });
 
