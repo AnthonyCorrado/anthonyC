@@ -1,8 +1,15 @@
 var windowWidth = $(window).width();
 var windowHeigth = $(window).height();
-console.log(windowHeigth);
+var landscape;
+
 // animates my initials until full name is displayed
 $(document).ready(function() {
+	if (windowWidth > windowHeigth) {
+		landscape = true;
+	}
+	if (landscape && windowHeigth <= 400) {
+		summaryToggle -= 1;
+	}
 	if(windowWidth > 768){
 		$('#last-initial').animate({'margin-left' : '68%'}, 1095);
 		$('#last-initial').delay(0).animate({'margin-left' : '0%'});
@@ -156,7 +163,7 @@ $('.skills-click').click(function(){
 		$(".made-by").slideToggle(800);
 		toggleState++;
 	}
-	if(summaryToggle % 2 !==0){
+	if(summaryToggle % 2 !==0 && windowWidth >= 550 || summaryToggle % 2 ===0 && windowWidth < 550){
 		$('.main-content-sub').slideToggle('slow');
 		summaryToggle++;
 	}
