@@ -41,7 +41,7 @@ $(document).ready(function() {
       return false;
 		});
 	}
-	if(windowWidth < 550){
+	if(windowWidth < 550 && !landscape){
 		$('.main-content-sub').css({'display' : 'none'});
 	}
 });
@@ -163,7 +163,7 @@ $('.skills-click').click(function(){
 		$(".made-by").slideToggle(800);
 		toggleState++;
 	}
-	if(summaryToggle % 2 !==0 && windowWidth >= 550 || summaryToggle % 2 ===0 && windowWidth < 550){
+	if(summaryToggle % 2 ===0){
 		$('.main-content-sub').slideToggle('slow');
 		summaryToggle++;
 	}
